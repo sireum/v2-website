@@ -1,0 +1,17 @@
+h1 {
+  font-size:0%;
+}
+
+hr {
+  color:#404040;
+  background-color:#404040;
+  border-color:#404040; 
+}
+
+.navbar {
+  font-size:large;
+}
+
+.navbar-brand {
+  font-size:110%;
+}
