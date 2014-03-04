@@ -15,8 +15,8 @@ STRESS 2014
      <p>
      <center>
      <big><big><big>STRESS 2014 &#8212; 
-     <small>3rd Biennial International School on 
-         Tool-based Rigorous Engineering of Software Systems</small></big></big></big>
+     <small>3rd International School on Tool-based Rigorous Engineering of
+            Software Systems</small></big></big></big>
 
      <br/>
 
