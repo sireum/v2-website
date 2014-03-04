@@ -125,7 +125,6 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Lecturers", "lecturers"),
-        ("Dates", "dates"),
         ("Registration", "registration"),
         ("Committee", "committee"),
         ("Venue", "venue"),

@@ -2,13 +2,12 @@
    :hidden:
 
    lecturers
-   dates
    registration
    committee
    venue
 
-STRESS 2014
-###########
+Home
+####
 
 .. raw:: html
 
