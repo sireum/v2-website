@@ -19,7 +19,7 @@ Home
 
      <br/>
 
-     <big><big><a href="http://www.corfuimperial.com">Corfu Imperial, Greece</a>, October 2014</big></big>
+     <big><big><a href="http://www.corfuimperial.com">Corfu Imperial, Greece</a>, October 3 - 7, 2014</big></big>
      <br/>
      </center>
      </p>
@@ -29,7 +29,7 @@ Home
      <big>Co-located with the 
      <a href="http://www.cs.uni-potsdam.de/isola/isola2014/">6th 
      International Symposium On Leveraging Applications of Formal Methods,
-     Verification and Validation (ISoLA)</a></big>    
+     Verification, and Validation (ISoLA)</a></big>    
      </center>
      </p>
      
