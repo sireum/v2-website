@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# STRESA website build configuration file, created by
+# Sireum website build configuration file, created by
 # sphinx-quickstart on Sun Mar  2 01:32:11 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -45,8 +45,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'STRESS 2014'
-copyright = '2014'
+project = 'Sireum'
+copyright = '2011 - 2014'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -105,13 +105,13 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
 # Path should be relative to the ``_static`` files directory.
-#html_logo = "my_logo.png"
+#html_logo = "sireum-logo.png"
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "STRESS'14",
+    'navbar_title': "Sireum",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Site",
@@ -124,10 +124,10 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-        ("Lecturers", "lecturers"),
-        ("Registration", "registration"),
-        ("Committee", "committee"),
-        ("Venue", "venue"),
+        ("Projects",      "projects"),
+        ("Team",          "team"),
+        ("Documentation", "doc"),
+        ("Software",      "software"),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
@@ -165,7 +165,7 @@ html_theme_options = {
     #
     # Options are nothing with "" (default) or the name of a valid theme
     # such as "amelia" or "cosmo".
-    'bootswatch_theme': "slate",
+    'bootswatch_theme': "spacelab",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
@@ -176,7 +176,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "STRESS 2014"
+html_title = "Sireum"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = "Robby's Homepage"
