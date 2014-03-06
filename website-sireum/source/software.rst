@@ -3,8 +3,8 @@ Software
 
 ----
 
-Contents
-********
+Links
+*****
 
 .. toctree::
    :maxdepth: 1
@@ -14,12 +14,9 @@ Contents
    packages
    license
    
-Links
-=====   
-   
 * `Repositories <http://github.com/sireum>`__
 
-* `Jenkins <http://jenkins.cis.ksu.edu>`__
+* `Jenkins <http://jenkins.cis.ksu.edu>`__   
 
 ----
 
@@ -117,6 +114,7 @@ The Sireum CLI will then print out the available modes that you can use.
 It is recommended to not modify/remove/add files under ``SIREUM_HOME`` as the 
 changes might be lost after an update.
 
+.. _subsec-distro:
 
 Sireum Distro
 =============

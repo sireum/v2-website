@@ -3,7 +3,6 @@
 
    projects
    team
-   doc
    software
 
 Home

@@ -7,6 +7,8 @@ Features
 Features for Sireum Users
 *************************
 
+.. _subsec-bakar-feature:
+
 Sireum Bakar
 ============
 

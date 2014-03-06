@@ -126,7 +126,6 @@ html_theme_options = {
     'navbar_links': [
         ("Projects",      "projects"),
         ("Team",          "team"),
-        ("Documentation", "doc"),
         ("Software",      "software"),
     ],
 

@@ -1,2 +1,2 @@
 touch source/index.rst; make html
-#scp -r build/html/* cislinux.cis.ksu.edu:/research/santos/public_html/STRESS/2014/
+scp -r build/html/* santos_jenkins@cislinux.cis.ksu.edu:/research/santos/web/sireum.org/
