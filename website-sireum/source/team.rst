@@ -45,7 +45,7 @@ Team
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
                    <strong>Jason Belt</strong> <br/>
-                   <em>Staff Engineer</em><br/>
+                   <em>Ph.D. Candidate</em><br/>
                    <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
