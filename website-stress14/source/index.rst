@@ -37,17 +37,6 @@ Home
 
      <div class="container-fluid">
        <div class="row">
-         <div class="col-md-3">
-         </div>
-         <div class="col-md-6">
-           <span class="thumbnail">
-             <img src="_static/corfu2.jpg" />
-           </span>
-         </div>
-         <div class="col-md-3">
-         </div>
-       </div>
-       <div class="row">
          <div class="col-md-6">
            <span class="thumbnail">
              <img src="_static/corfu1.jpg" />
