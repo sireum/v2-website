@@ -18,7 +18,7 @@ Organizing Committee
 
 ----
 
-`Bernhard Steffen <http://ls5-www.cs.tu-dortmund.de/cms/de/mitarbeiter/prof/Bernhard_Steffen.html>`__, University of Dortmund
+`Bernhard Steffen <http://ls5-www.cs.tu-dortmund.de/cms/de/mitarbeiter/prof/Bernhard_Steffen.html>`__, TU Dortmund University
 
 ----
 

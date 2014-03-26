@@ -8,11 +8,11 @@ Lectures
 
 ----
 
-Introduction to Verification with SPARK 2014
-============================================
+Introduction to Verification with |SPARK 2014|
+==============================================
 
-Lecturers: |Yannick Moy| (AdaCore) and |Johannes Kanig| (AdaCore)
------------------------------------------------------------------
+Lecturer: |Yannick Moy| (AdaCore)
+---------------------------------
 
 SPARK 2014 is the latest evolution of the SPARK programming language.
 Based on Ada 2012, it encompasses a rich subset of the language and
@@ -37,8 +37,8 @@ proof techniques that may be required.
 
 ----
 
-Bakar Kiasan -- A Certifying Program Verifier for High-Integrity Systems
-========================================================================
+|Bakar Kiasan| -- A Certifying Program Verifier for High-Integrity Systems
+==========================================================================
 
 Lecturers: |Robby| (Kansas State University) and |John Hatcliff| (Kansas State University)
 ------------------------------------------------------------------------------------------
@@ -73,8 +73,8 @@ exercises using Bakar Kiasan to verify Spark 2014 program units.
 
 ----
 
-SMT-LIB and Kind
-================
+|SMT-LIB| and |Kind|
+====================
 
 Lecturer: |Cesare Tinelli| (University of Iowa)
 -----------------------------------------------

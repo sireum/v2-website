@@ -13,3 +13,13 @@
 .. |Cesare Tinelli| replace:: `Cesare Tinelli <http://homepage.cs.uiowa.edu/~tinelli/>`__
 
 .. |sireum.org| replace:: `sireum.org <http://sireum.org>`__
+
+.. |jABC| replace:: `jABC <http://jabc.cs.uni-dortmund.de>`__
+
+.. |Spark 2014| replace:: `Spark 2014 <http://www.spark-2014.org>`__
+
+.. |Bakar Kiasan| replace:: `Bakar Kiasan <http://sireum.org>`__
+
+.. |SMT-LIB| replace:: `SMT-LIB <http://www.smtlib.org>`__
+
+.. |Kind| replace:: `Kind <http://clc.cs.uiowa.edu/Kind/>`__

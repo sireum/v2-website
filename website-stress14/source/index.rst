@@ -9,6 +9,8 @@
 Home
 ####
 
+.. include:: def-contact.rst
+
 .. raw:: html
 
      <p>
@@ -35,6 +37,14 @@ Home
      
      <hr/>
 
+     <p>
+     <center><big>
+     Theme: Software Specification, Verification, and Variation
+     </big></center>
+     </p>
+     
+     <hr/>
+
      <div class="container-fluid">
        <div class="row">
          <div class="col-md-6">
@@ -49,3 +59,36 @@ Home
          </div>
        </div>
      </div>
+     
+The International School on Tool-based Rigorous Engineering of Software 
+Systems (STRESS) series aims to provide top-quality lectures and
+innovative pedagogical material that provide young researchers with:
+ 
+* instruction in existing and emerging formal methods and software 
+  engineering techniques that are tool-supported and process-oriented,
+  
+* insights into how software is developed in the real world, including 
+  emphasis on domains such as safety/mission-critical software and
+  embedded systems where the development effort associated with tool-based
+  formal methods promises greatest returns,
+  
+* case-studies and example domains in which formal methods have been
+  successfully transitioned into actual development along with insights in
+  how to bridge the gap between research tools and actual development
+  processes, and
+  
+* additional pedagogical resources and personal contacts that they can
+  explore for the purpose of increasing the impact of their research.
+ 
+The theme of the 2014 International School is on Software Specification, 
+Verification, and Variation. 
+It features lecturers from academic and industry with significant
+experience in software contract, software analysis and certification, and
+software product lines.
+Lectures will emphasize the use of program analyzers and verifiers, 
+model-driven development and software architecture tools, and 
+industry-relevant challenge problems.     
+ 
+.. raw:: html
+
+     <hr/>
