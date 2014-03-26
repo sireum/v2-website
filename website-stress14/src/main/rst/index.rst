@@ -1,7 +1,7 @@
 .. toctree::
    :hidden:
 
-   lecturers
+   lectures
    registration
    committee
    venue
