@@ -91,4 +91,4 @@ industry-relevant challenge problems.
  
 .. raw:: html
 
-     <hr/>
+   <hr/>

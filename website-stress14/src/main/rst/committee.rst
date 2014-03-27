@@ -22,3 +22,14 @@ Organizing Committee
 
 ----
 
+.. raw:: html
+
+   <center><big>
+
+**Contact**: stress14@santoslab.org
+
+
+.. raw:: html
+
+   </big></center>
+     
