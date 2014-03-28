@@ -19,7 +19,7 @@ Based on Ada 2012, it encompasses a rich subset of the language and
 augments it with further language contracts designed to support advanced
 static verification techniques.
 
-This tutorial will provide a broad overview of the SPARK 2014 language:
+This lecture will provide a broad overview of the SPARK 2014 language:
 the subset of Ada 2012 which it includes and the additional constructs
 which it adds to support verification. The morning session will cover
 basic features and static analysis techniques. This will be followed by an
@@ -33,7 +33,7 @@ abstraction and refinement. We will also look at more advanced
 verification techniques supported by the language such as information flow
 analysis and proving the absence of run-time exceptions (divide-by-zero,
 numeric overflow). Finally, we will touch on some of the more advanced
-proof techniques that may be required.
+proof techniques that may be required.  
 
 ----
 
