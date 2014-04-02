@@ -64,7 +64,8 @@ software static analyzers for different kinds of properties.
 
 Sireum is based on previous extensive efforts in
 the  `Bogor <http://bogor.projects.cis.ksu.edu>`__ model checking framework, 
-the Kiasan symbolic execution framework, and 
+the `Kiasan <http://www.computer.org/csdl/proceedings/ase/2006/2579/00/25790157-abs.html>`__ 
+symbolic execution framework, and 
 the `Indus <http://indus.projects.cis.ksu.edu>`__ static analysis framework, 
 the `Bandera <http://bandera.projects.cis.ksu.edu>`__ Java model checker at
 `SAnToS Laboratory <http://santoslab.org>`__. 
