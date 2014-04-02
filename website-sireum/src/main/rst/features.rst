@@ -26,7 +26,7 @@ To run Sireum Bakar, type the following in a terminal (add ``-h`` for help)::
 
     sireum launch bakar
 
-It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/classic/``) 
+It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/dsl/``) 
 with Bakar Eclipse plugins (if they have not been installed previously), and 
 launch Eclipse.
 
@@ -45,7 +45,7 @@ To run Sireum development tools, type the following in a terminal
 
     sireum launch sireumdev
 
-It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/classic/``) with associated 
+It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/dsl/``) with associated 
 plugins necessay for Sireum development and ANTLRWorks 
 (in ``SIREUM_HOME/apps/antlr/works``), and launch Eclipse.
 Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
@@ -77,7 +77,7 @@ To install the compiler tools, type the following in a terminal
 
     sireum launch compilerdev
 
-It installs Eclipse_ (in ``SIREUM_HOME/apps/eclipse/classic/``) 
+It installs Eclipse_ (in ``SIREUM_HOME/apps/eclipse/dsl/``) 
 with associated plugins necessay for the compiler course and ANTLRWorks 
 (in ``SIREUM_HOME/apps/antlr/works``), and then launch Eclipse.
 Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
