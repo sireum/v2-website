@@ -127,8 +127,7 @@ html_theme_options = {
         ("Lectures", "lectures"),
         ("Registration", "registration"),
         ("Committee", "committee"),
-        ("Venue", "venue"),
-        ("More", "more")
+        ("Venue", "venue")
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
