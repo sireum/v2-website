@@ -73,22 +73,29 @@ exercises using Bakar Kiasan to verify Spark 2014 program units.
 
 ----
 
+SCCE: Variability and Evolution through Integrated Domain, Data and Process Modeling
+====================================================================================
+
+Lecturers: |Bernhard Steffen| (TU Dortmund University) and |Tiziana Margaria| (University of Potsdam)
+-----------------------------------------------------------------------------------------------------
+
+The lecture will illustrate the generator-driven approach along concrete 
+hands-on exercises with the |jABC|, Cinco, and DyWA frameworks comprising 
+the development of process-oriented web applications and domain-specific 
+graphical modeling tools.
+
+----
+
 |SMT-LIB| and |Kind|
 ====================
 
 Lecturer: |Cesare Tinelli| (University of Iowa)
 -----------------------------------------------
 
-TBA
-
-----
-
-TBA
-===
-
-Lecturers: |Bernhard Steffen| (TU Dortmund University) and |Tiziana Margaria| (University of Potsdam)
------------------------------------------------------------------------------------------------------
-
-TBA
+The lecture will start with an overview of SMT and its applications, 
+followed by exercises using SMT solvers supporting the SMT-LIB input format. 
+In a second part it will give a brief overview of model checking techniques 
+relying on SMT solvers, and show how to use the Kind checker to prove 
+invariant properties of transition systems.
 
 ----

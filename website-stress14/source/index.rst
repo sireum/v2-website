@@ -15,7 +15,7 @@ Home
 
      <p>
      <center>
-     <big><big><big>STRESS 2014 &#8212; 
+     <big><big><big><a href="http://santos.cis.ksu.edu/STRESS/2014/STRESS14-flyer.pdf">STRESS 2014</a> &#8212; 
      <small>3rd International School on Tool-based Rigorous Engineering of
             Software Systems</small></big></big></big>
 
@@ -28,7 +28,7 @@ Home
      
      <p>
      <center>
-     <big>Co-located with the 
+     <big>Associated with the 
      <a href="http://www.cs.uni-potsdam.de/isola/isola2014/">6th 
      International Symposium On Leveraging Applications of Formal Methods,
      Verification, and Validation (ISoLA)</a></big>    
@@ -40,6 +40,7 @@ Home
      <p>
      <center><big>
      Theme: Software Specification, Verification, and Variation
+     (<b><a href="http://santos.cis.ksu.edu/STRESS/2014/STRESS14-flyer.pdf">flyer</a></b>)
      </big></center>
      </p>
      
@@ -80,8 +81,8 @@ innovative pedagogical material that provide young researchers with:
 * additional pedagogical resources and personal contacts that they can
   explore for the purpose of increasing the impact of their research.
  
-The theme of the 2014 International School is on Software Specification, 
-Verification, and Variation. 
+The theme of the 2014 International School is on **Software Specification**, 
+**Verification**, and **Variation**. 
 It features lecturers from academic and industry with significant
 experience in software contract, software analysis and certification, and
 software product lines.
