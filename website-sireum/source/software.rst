@@ -31,7 +31,7 @@ Downloading Sireum
 Managed Java and Scala
 ----------------------
 
-The following Sireum distributions include Java (JDK) 7u51 and Scala 2.10.3:
+The following Sireum distributions include Java (JDK) 8 and Scala 2.10.4:
 
 * **Stable**: 
   `mac64 <http://sireum.org/artifact/sireum-stable-mac64.tar.gz>`__, 
@@ -71,21 +71,13 @@ you can download just the Sireum script:
 
 * **Stable**
 
-  + for Mac and Linux: 
-    `gzip'd <http://update.sireum.org/sireum.gz>`__, 
-    `uncompressed <http://update.sireum.org/sireum>`__
-  + for Windows:
-    `gzip'd <http://update.sireum.org/sireum.bat.gz>`__, 
-    `uncompressed <http://update.sireum.org/sireum.bat>`__
+  + for Mac and Linux: `sireum <http://update.sireum.org/sireum>`__
+  + for Windows: `sireum.bat <http://update.sireum.org/sireum.bat>`__
 
 * **Development**
 
-  + for Mac and Linux: 
-    `gzip'd <http://update.sireum.org/dev/latest/sireum.gz>`__, 
-    `uncompressed <http://update.sireum.org/dev/latest/sireum>`__
-  + for Windows: 
-    `gzip'd <http://update.sireum.org/dev/latest/sireum.bat.gz>`__, 
-    `uncompressed <http://update.sireum.org/dev/latest/sireum.bat>`__
+  + for Mac and Linux: `sireum <http://update.sireum.org/dev/latest/sireum>`__
+  + for Windows: `sireum.bat <http://update.sireum.org/dev/latest/sireum.bat>`__
 
 Download the Sireum script appropriate for your platform (gunzip the Sireum 
 script if downloading the compressed version), and store it in a directory such 
