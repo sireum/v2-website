@@ -88,7 +88,42 @@ experience in software contract, software analysis and certification, and
 software product lines.
 Lectures will emphasize the use of program analyzers and verifiers, 
 model-driven development and software architecture tools, and 
-industry-relevant challenge problems.     
+industry-relevant challenge problems.
+
+.. raw:: html
+
+   <hr/>
+
+In addition to STRESS 2014, 
+the `ISoLA <http://www.cs.uni-potsdam.de/isola/isola2014/>`__ week 
+(`CFP <http://santos.cis.ksu.edu/STRESS/2014/ISoLA14-CFP.pdf>`__)
+offers a lot of opportunites besides the standard conference program, 
+which addresses in particular also for PhD students:
+
+* The LearnLib tutorial will illustrate the power of test-based modelling, 
+  an approach ideally suited to investigate legacy software.
+  
+* The RERS challenge provides an ideal opportunity to check one's own
+  verification competence. During the challenge you will meet world
+  leading experts in tool-based software verification.
+  http://www.rers-challenge.org
+  
+* The industrial day will give an impression of today's needs industry.
+
+Finally, there is also a direct and tangible benefit for young scientists:
+
+* The poster session gives PhD students the opportunity to give a 10 minutes
+  sketch of their work, which they can later on elaborate on during the breaks.
+  One page abstracts of selected contributions will be published in the ISoLA 
+  proceedings.
+
+* Moreover, participating PhD student will be invited to contribute to the  
+  post conference proceedings published in Springer's CCIS series.
+  
+  **The deadline for poster presentation is: May 15, 2014**
+ 
+  Later submissions may also be accepted but would be too late for the
+  selection process for one page abstracts in the conference proceedings.     
  
 .. raw:: html
 

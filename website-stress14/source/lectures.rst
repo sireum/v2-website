@@ -76,13 +76,62 @@ exercises using Bakar Kiasan to verify Spark 2014 program units.
 SCCE: Variability and Evolution through Integrated Domain, Data and Process Modeling
 ====================================================================================
 
-Lecturers: |Bernhard Steffen| (TU Dortmund University) and |Tiziana Margaria| (University of Potsdam)
------------------------------------------------------------------------------------------------------
+Lecturers: |Bernhard Steffen| (TU Dortmund), |Tiziana Margaria| (University of Potsdam),
+----------------------------------------------------------------------------------------
 
-The lecture will illustrate the generator-driven approach along concrete 
-hands-on exercises with the |jABC|, Cinco, and DyWA frameworks comprising 
-the development of process-oriented web applications and domain-specific 
-graphical modeling tools.
+.. raw:: html
+
+   <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cs.tu-dortmund.de/nps/de/Home/Personen/N/Naujokat__Stefan.html">Stefan Naujokat</a> (TU Dortmund), and
+   <a href="http://ls5-www.cs.tu-dortmund.de/cms/de/mitarbeiter/wiss/Johannes_Neubauer.html">Johannes Neubauer</a> (TU Dortmund)</h4>
+   
+
+Domain-specific tool support is the key towards opening development
+responsibility for a wider public without dedicated programming
+knowledge. This is, for example, important in areas like business process
+modelling or scientific workflows. The intention behind the tools and
+methods presented in this lecture lies in providing domain experts with
+appropriate (non-programming) tools, so that they can solve problems
+within their domainin in a non-technical way and even construct
+domain-specific software products without dedicated programming knowledge.
+
+In the first session of this lecture we will introduce the Dynamic Web
+Application (DyWA) framework that supports the prototype-driven
+development of process-oriented web applications. It is a generic, fully
+functional prototype that accompanies the development right from the
+beginning, offering a web-based definition facility for application
+domains in terms of type schemata that captures the data types and their
+associations. The session will provide hands-on experience on domain
+modeling with DyWA which automatically generates the (complex) modeled
+data structures together with their fully executable access functionality.
+
+The second session focuses on 'breathing life' into the DyWA domain models
+via the process modeling environment |jABC4|. In particular, it will
+illustrate the power of prototype-driven process development throughout
+the whole system lifecylce, with a focus on system evolution and system
+migration.
+
+The third session presents Cinco, a particularly powerful application of
+our process modeling framework based on the Eclipse ecosystem. Cinco is a
+meta tooling suite for generating domain-specific graphical development
+tools in terms of fully operative Eclipse products. It can be regarded as
+a domain-specific instance of generic meta modeling frameworks such as
+Eclipse EMF/Graphiti which radically eases their use through its
+domain-specific focus.
+Cinco is an application of our process modeling and design framework |jABC4|
+as all the required transformations, be they model-to-model or
+model-to-code, are modeled with |jABC4| so that they can also be developed
+without specific programming knowledge. 
+Please note that Cinco is a prime example for bootstrapping. It is a tool
+for delevoping domain-specific development tools that is build with a
+domain-specific development tool (|jABC4|). Indeed, the next version of 
+|jABC4|, |jABC5| will be constructed in this very fashion.
+In the hands-on tutorial part of this session the participants will use
+Cinco to create a full graphical DSL modeling tool of their choice (e.g.,
+for State Charts, Petri Nets, BPMN, Timed Automata, or even architectural
+models or industrial plant layouts) consisting of an abstract
+specification describing its structure and appearance, accompanied by a
+code generator that is modeled in |jABC4| using modeling components
+generated from the very same specification.
 
 ----
 
