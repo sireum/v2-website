@@ -98,7 +98,7 @@ In addition to STRESS 2014,
 the `ISoLA <http://www.cs.uni-potsdam.de/isola/isola2014/>`__ week 
 (`CFP <http://santos.cis.ksu.edu/STRESS/2014/ISoLA14-CFP.pdf>`__)
 offers a lot of opportunites besides the standard conference program, 
-which addresses in particular also for PhD students:
+which addresses in particular also PhD students:
 
 * The LearnLib tutorial will illustrate the power of test-based modelling, 
   an approach ideally suited to investigate legacy software.
