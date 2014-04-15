@@ -43,12 +43,18 @@ Sireum Bakar currently includes:
   `HILT12 <http://dl.acm.org/citation.cfm?doid=2402676.2402679>`__,
   `NFM11 <http://link.springer.com/chapter/10.1007%2F978-3-642-20398-5_6>`__, and
   `SIGADA11 <http://dl.acm.org/citation.cfm?doid=2070337.2070357>`__.
-  
-  
-  
 
 You can install Bakar v1 by following the instruction in 
 :ref:`subsec-distro`'s feature :ref:`subsec-bakar-feature`.
+
+Demo Videos:
+
+* `Installing Sireum (and Sireum Bakar) <http://sireum.org/files/media/sireum-bakar-installation.mp4>`__
+
+* `Updating Sireum <http://sireum.org/files/media/sireum-update.mp4>`__
+
+* `Sireum Bakar Kiasan <http://sireum.org/files/media/bakarv1/sireum-bakar-kiasan.mp4>`__ 
+  (`examples <http://sireum.org/files/media/bakarv1/examples/bakar-examples.zip>`__)
 
 We are actively developing Bakar v2 that will have the above tools
 along with a Spark 2014/Ada 2012 front-end for Java, Scala, and Coq/OCaml.
