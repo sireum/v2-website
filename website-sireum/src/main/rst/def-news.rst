@@ -3,9 +3,9 @@
   <ul>
     <li>
       
-      Sireum has been updated to Scala 2.11.
+      Sireum has been updated to Scala 2.11.1.
       
-      &nbsp;&nbsp;<span data-livestamp="2014-05-09T11:15:00-0500"></span>
+      &nbsp;&nbsp;<span data-livestamp="2014-05-21T14:50:00-0500"></span>
       
     </li>
         

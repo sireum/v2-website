@@ -40,7 +40,7 @@ Downloading Sireum
 Managed Java and Scala
 ----------------------
 
-The following Sireum distributions include Java (JDK) 8u5 and Scala 2.11:
+The following Sireum distributions include Java (JDK) 8u5 and Scala 2.11.1:
 
 * **Stable**: 
   `mac64 <http://sireum.org/artifact/sireum-stable-mac64.tar.gz>`__, 
