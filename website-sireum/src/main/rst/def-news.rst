@@ -2,6 +2,14 @@
 
   <ul>
     <li>
+    
+      <a href="http://libre.adacore.com/tools/gnat-gpl-edition/">GNAT GPL</a> has been updated to 2014 version.
+    
+      &nbsp;&nbsp; <span data-livestamp="2014-05-30T14:09:08-0500"></span>
+      
+    </li>
+    
+    <li>
       
       Sireum has been updated to Scala 2.11.1.
       
@@ -22,14 +30,6 @@
       Sireum codebase has been moved to GitHub (<a href="http://github.com/sireum">http://github.com/sireum</a>).
     
       &nbsp;&nbsp; <span data-livestamp="2013-09-13T14:42:14-0500"></span>
-      
-    </li>
-    
-    <li>
-    
-      <a href="http://libre.adacore.com/tools/gnat-gpl-edition/">GNAT GPL 2013</a> is now in Sireum Distro
-    
-      &nbsp;&nbsp; <span data-livestamp="2013-06-12T14:00:30-0500"></span>
       
     </li>
     
