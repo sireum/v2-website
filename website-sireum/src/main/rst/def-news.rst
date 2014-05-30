@@ -5,7 +5,7 @@
     
       <a href="http://libre.adacore.com/tools/gnat-gpl-edition/">GNAT GPL</a> has been updated to 2014 version.
     
-      &nbsp;&nbsp; <span data-livestamp="2014-05-30T14:09:08-0500"></span>
+      &nbsp;&nbsp; <span data-livestamp="2014-05-30T09:08:00-0500"></span>
       
     </li>
     
