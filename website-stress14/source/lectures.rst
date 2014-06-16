@@ -141,10 +141,39 @@ generated from the very same specification.
 Lecturer: |Cesare Tinelli| (University of Iowa)
 -----------------------------------------------
 
-The lecture will start with an overview of SMT and its applications, 
-followed by exercises using SMT solvers supporting the SMT-LIB input format. 
-In a second part it will give a brief overview of model checking techniques 
-relying on SMT solvers, and show how to use the Kind checker to prove 
-invariant properties of transition systems.
+Many problems in computer science, in particular in formal methods, can be
+reduced to checking the satisfiability of a formula in some logic.
+Several of these problems can be naturally formulated as Satisfiability
+Modulo Theories (SMT) problems which are about checking the satisfiability
+of first-order formulas with respect to some logical theory *T* of 
+interest. SMT differs from general automated deduction in that the 
+background theory *T* need not be finitely or even first-order 
+axiomatizable, and specialized inference methods are used for each theory.
+By being theory-specific and restricting their language to certain classes
+of formulas, these specialized methods can be implemented in solvers that 
+are more efficient in practice than general-purpose theorem provers.
+SMT solvers have been used successfully in several application ares
+including hardware verification, equivalence checking, bounded and
+unbounded model checking, predicate abstraction, static analysis,
+automated test case generation, extended static checking, and type checking.
+
+The first session of this lecture will start with an overview of SMT and
+its applications, followed by exercises using SMT solvers supporting the
+standard SMT-LIB input format, with a focus on the
+|CVC4| solver. |CVC4| is a widely-used open-source SMT solver supporting
+a rich set of logical theories including the theory of arrays,
+bit vectors, linear integer and real arithmetic, algebraic data types and
+strings.
+
+The second session will give a brief overview of model checking techniques
+relying on SMT solvers, and show how to use the SMT-based
+|Kind| 2 model checker to prove invariant properties of transition systems.
+|Kind| 2 checks multiple properties simultaneously by running in parallel
+several model checking engines based on such techniques as bounded model
+checking (BMC), k-induction, IC3/PDR, and automatic invariant generation.
+The engines cooperate by exchanging information about the proven or
+disproven properties as well as auxiliary invariants.
+Examples and exercises will use transition systems and properties
+specified in the synchronous data flow language Lustre.
 
 ----

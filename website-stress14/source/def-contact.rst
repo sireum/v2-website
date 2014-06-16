@@ -26,8 +26,10 @@
 
 .. |SMT-LIB| replace:: `SMT-LIB <http://www.smtlib.org>`__
 
-.. |Kind| replace:: `Kind <http://clc.cs.uiowa.edu/Kind/>`__
+.. |Kind| replace:: `Kind <http://kind.cs.uiowa.edu>`__
 
 .. |Stefan Naujokat| replace:: `Stefan Naujokat <http://www.cs.tu-dortmund.de/nps/de/Home/Personen/N/Naujokat__Stefan.html>`__
 
 .. |Johannes Neubauer| replace:: `Johannes Neubauer <http://ls5-www.cs.tu-dortmund.de/cms/de/mitarbeiter/wiss/Johannes_Neubauer.html>`__
+
+.. |CVC4| replace:: `CVC4 <http://cvc4.cs.nyu.edu/web/>`__
