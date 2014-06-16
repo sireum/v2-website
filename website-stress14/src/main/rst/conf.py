@@ -125,9 +125,9 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Lectures", "lectures"),
-        ("Registration", "registration"),
+        ("Registration", "http://www.cs.uni-potsdam.de/isola/isola2014/registration.html", True),
         ("Committee", "committee"),
-        ("Venue", "venue")
+        ("Venue", "http://www.cs.uni-potsdam.de/isola/isola2014/general_information.html", True)
     ],
 
     # Render the next and previous page links in navbar. (Default: true)

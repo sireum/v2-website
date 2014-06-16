@@ -2,9 +2,7 @@
    :hidden:
 
    lectures
-   registration
    committee
-   venue
 
 Home
 ####
