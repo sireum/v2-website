@@ -50,14 +50,6 @@ plugins necessay for Sireum development and ANTLRWorks
 Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
 `Java Installed JREs preference page <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
 and make it the default. In addition, set Eclipse's `Java Compiler compliance level <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fbuildpath%2Fref-preferences-user-libraries.htm>`_ to 1.7.
-
-.. note::
-   
-   If Eclipse shows you a dialog box indicating that "Subversion Native 
-   Library Not Available", it means that you do not have native SVN 
-   installed; click Ok to close the dialog box. You can correct this issue 
-   by setting SVN Interface Client to "SVNKit" in the Eclipse’s 
-   Team->SVN preference page.
    
 
 ANTLRWorks
@@ -83,7 +75,7 @@ for information regarding the course.
 To install the compiler tools, type the following in a terminal 
 (add ``-h`` for help)::
 
-    sireum launch compilerdev
+    sireum launch eclipse
 
 It installs Eclipse_ (in ``SIREUM_HOME/apps/eclipse/dsl/``) 
 with associated plugins necessay for the compiler course and ANTLRWorks 
@@ -91,9 +83,6 @@ with associated plugins necessay for the compiler course and ANTLRWorks
 Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
 `Java Installed JREs preference page <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
 and make it the default. In addition, set Eclipse's `Java Compiler compliance level <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fbuildpath%2Fref-preferences-user-libraries.htm>`_ to 1.7.
-
-After Eclipse launches, if you see a dialog box titled "Subversion 
-Native Library Not Available", see the `Notes on Subclipse`_ below.
 
 
 ANTLRWorks
