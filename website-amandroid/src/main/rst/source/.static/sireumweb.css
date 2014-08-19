@@ -1,0 +1,50 @@
+a:link {
+  text-decoration:none;
+}
+
+a:visited {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+a:active {
+  text-decoration:underline;
+}
+
+a:target {
+  color: #000000;
+}
+
+body {
+}
+
+h1 {
+  font-size:0%;
+}
+
+h2 {
+  font-size:165%;
+}
+
+h3 {
+  font-size:145%;
+}
+
+h4 {
+  font-size:115%;
+}
+
+h5 {
+  font-size:100%;
+}
+
+.navbar {
+  font-size:large;
+}
+
+.navbar-brand {
+  font-size:110%;
+}
