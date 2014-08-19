@@ -69,7 +69,7 @@ Team
                  <td valign="top">
                    <strong>Sankardas Roy</strong> <br/>
                    <em>Research Associate</em><br/>
-                   <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
+                   <a href="http://arguslab.org">Argus</a>/<a href="http://santoslab.org">SAnToS</a> Laboratory<br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
                    <a href="http://people.cis.ksu.edu/~sroy">Website</a>
@@ -94,7 +94,7 @@ Team
                  <td valign="top">
                    <strong>Fengguo Wei</strong> <br/>
                    <em>Ph.D. Candidate</em><br/>
-                   <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
+                   <a href="http://arguslab.org">Argus</a>/<a href="http://santoslab.org">SAnToS</a> Laboratory<br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
                    <a href="http://people.cis.ksu.edu/~fgwei">Website</a>
@@ -222,7 +222,7 @@ Collaborators
                  <td valign="top">
                    <strong>Xinming Ou</strong> <br/>
                    <em>Associate Professor</em><br/>
-                   <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
+                   <a href="http://arguslab.org">Argus Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
                    <a href="http://people.cis.ksu.edu/~xou">Website</a>
