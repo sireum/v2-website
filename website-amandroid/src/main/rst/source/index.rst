@@ -55,9 +55,9 @@ Home
            </div>
            <div class="panel-body">
 
-Amandroid is ...
+Amandroid is a static analysis framework for Android apps. More details are as follows ...
 
-The development of Amandroid is supported in part by the US Air Force Office
+Acknowledgement: The development of Amandroid is supported in part by the US Air Force Office
 of Scientific Research (AFOSR) grant no. FA9550-09-0138 and 
 by the U.S. National Science  Foundation (NSF)
 under grant no. 
