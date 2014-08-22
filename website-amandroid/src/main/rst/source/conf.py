@@ -126,6 +126,8 @@ html_theme_options = {
     'navbar_links': [
         ("Documentation", "documentation"),
         ("Software",      "software"),
+		("How To Use",    "usage"),
+		("Detected Problems", "problems"),
         ("Team",          "team"),
     ],
 
