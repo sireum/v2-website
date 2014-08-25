@@ -16,13 +16,9 @@ from **Source**: (com.subsplash.thechurchapp.TwitterLoginActivity:EntryNode, icc
 
 to **Sink**: (L06551a, icc_sink)
 
-The nodes and edges on the path are: 
-
-Entry@(environment of TwitterLoginActivity) -> 
-Call@(launchTwitterTweetActivity, L0654fc)(onCreate, L065654)-> 
-Call@(launchTwitterTweetActivity, L065508)(onCreate, L065654)-> 
-Call@(launchTwitterTweetActivity, L065514)(onCreate, L065654)->
-Call@(launchTwitterTweetActivity, L06551a)(onCreate, L065654)
+The nodes and edges on the path are (with calling context length k = 1): 
+::
+	Entry@(environment of TwitterLoginActivity) -> Call@(launchTwitterTweetActivity, L0654fc)(onCreate, L065654)-> Call@(launchTwitterTweetActivity, L065508)(onCreate, L065654)-> Call@(launchTwitterTweetActivity, L065514)(onCreate, L065654)-> Call@(launchTwitterTweetActivity, L06551a)(onCreate, L065654)
 
 More details:
 

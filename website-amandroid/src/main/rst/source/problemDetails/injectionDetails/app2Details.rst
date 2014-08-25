@@ -17,11 +17,8 @@ from **Source**: (com.kamagames.notepad.NotesList:EntryNode, icc_source)
 to **Sink**: (L002dde, icc_sink)
 
 The nodes and edges on the path are: 
-
-Entry@(environment method of NotesList) -> 
-Call@(onListItemClick,L002d74)-> 
-Call@(onListItemClick,L002d7c)-> 
-Call@(onListItemClick,L002dde)
+::
+	Entry@(environment method of NotesList) -> Call@(onListItemClick,L002d74)-> Call@(onListItemClick,L002d7c)-> Call@(onListItemClick,L002dde)
 
 More details:
 
