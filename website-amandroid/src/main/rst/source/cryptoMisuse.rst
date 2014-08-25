@@ -6,7 +6,7 @@ Crypto API Misuse Examples
 
 We found several examples of Crypto API misuse. We observe a few interesting patterns.
 
-1.  App **name**: hu.sanomabp.citromail; **Source** Google Play
+1.  App **name**: hu.sanomabp.citromail; **Source**: Google Play
 
     Detected **Problem**: Encrypt OAuth token using AES ECB mode, then store it in SharedPreference.
 
