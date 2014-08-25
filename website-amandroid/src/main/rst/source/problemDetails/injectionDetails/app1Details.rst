@@ -22,7 +22,7 @@ The nodes and edges on the path are (with calling context length k = 1):
 
 More details:
 
-The TwitterLoginActivity is a public component. We observe that its *onCreate* method invokes *launchTwitterTweetActivity* method, which illustrates the above path.
+The TwitterLoginActivity is a public component. We observe that its *onCreate* method invokes *launchTwitterTweetActivity* method, which illustrates the above path. Inside this method at **Line 06551a** an Intent is sent out, which contains an *Url* that originated from the incoming Intent. The *Url* will be used in the destination Activity, it potentially implies that their is a injection vulnerability.
 
 The code of *launchTwitterTweetActivity* method is as follows:
 ::
