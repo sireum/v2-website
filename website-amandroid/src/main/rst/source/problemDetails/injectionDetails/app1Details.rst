@@ -30,7 +30,7 @@ The TwitterLoginActivity is a public component. We observe that its *onCreate* m
 
 The code of *launchTwitterTweetActivity* method is as follows:
 ::
-	procedure `void` `TwitterLoginActivity.launchTwitterTweetActivity` (`TwitterLoginActivity` v5){
+	procedure `void` `launchTwitterTweetActivity` (`TwitterLoginActivity` v5){
 		#L065490.   v0:= new `Intent`;
 		#L065494.   v3:= `@@TwitterTweetActivity.class`;
 		#L065498.   call temp:=  `Intent.<init>`(v0, v5, v3);
