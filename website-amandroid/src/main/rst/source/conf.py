@@ -124,11 +124,11 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-        ("Documentation", "documentation"),
-        ("Software",      "software"),
-		("How To Use",    "usage"),
-		("Detected Problems", "problems"),
-        ("Team",          "team"),
+        ("Documentation",       "documentation"),
+        ("Software",            "software"),
+		("Detected Problems",   "problems"),
+        ("Service",             "service"),
+        ("Team",                "team"),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
