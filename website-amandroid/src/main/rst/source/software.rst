@@ -60,7 +60,7 @@ After running above command you will get the list of existing Amandroid plugins.
 .. note:: Each plugin may need to set several options, and option [``-ni``, ``-ns``, ``-par``] is special: when you set such option you need to use something like: ``-ni true``, and if you want false, you don’t need to specify such option.
 
 
-.. tip:: Mode Prefix and Feature Camel Case
+.. tip:: Mode Prefix
 
 	For example::
 	
