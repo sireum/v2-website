@@ -38,11 +38,15 @@ Setup Amandroid
 
 Before using Amandroid, you need to setup following environment variable:
 
-	``SIREUM_HOME``: points to Sireum's main directory. e.g.,::
+	``SIREUM_HOME``: points to Sireum's main directory. e.g.,:
+	
+	.. code-block:: bash
 
 		$ export SIREUM_HOME=/path/AmandroidCli
 
-	``AMANDROID_HOME`` : points to Amandroid’s main directory. e.g.,::
+	``AMANDROID_HOME`` : points to Amandroid’s main directory. e.g.,:
+
+	.. code-block:: bash
 
 		$ export AMANDROID_HOME=$SIREUM_HOME/Amandroid
 
@@ -50,7 +54,9 @@ Before using Amandroid, you need to setup following environment variable:
 Running Amandroid
 -------------------
 
-To run Amandroid, in a terminal command prompt, type::
+To run Amandroid, in a terminal command prompt, type:
+
+.. code-block:: bash
 
 	$ sireum x amandroid
 
@@ -62,11 +68,15 @@ After running above command you will get the list of existing Amandroid plugins.
 
 .. tip:: Mode Prefix
 
-	For example::
+	For example:
+
+	.. code-block:: bash
 	
 		$ sireum x a
 
-	is equal to::
+	is equal to:
+
+	.. code-block:: bash
 
 		$ sireum x amandroid
 

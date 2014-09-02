@@ -3,6 +3,16 @@
 Documentation
 #############
 
+Manual
+******
+
+:doc:`docs/contents`
+
+API docs
+******
+
+under construction
+
 Papers
 ******
 

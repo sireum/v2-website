@@ -3,10 +3,10 @@
 
    documentation
    software
+   problems
+   service
    team
 
-Home
-####
 
 .. raw:: html
 

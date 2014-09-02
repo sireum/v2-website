@@ -1,9 +1,6 @@
 Team
 ####
 
-Team
-****
-
 .. raw:: html
 
    <br/>
