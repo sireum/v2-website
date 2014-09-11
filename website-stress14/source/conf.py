@@ -125,8 +125,9 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Lectures", "lectures"),
-        ("Registration", "http://www.cs.uni-potsdam.de/isola/isola2014/registration.html", True),
+        ("Schedule", "schedule"),
         ("Committee", "committee"),
+        ("Registration", "http://www.cs.uni-potsdam.de/isola/isola2014/registration.html", True),
         ("Venue", "http://www.cs.uni-potsdam.de/isola/isola2014/general_information.html", True)
     ],
 
