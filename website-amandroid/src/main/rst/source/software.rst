@@ -36,19 +36,21 @@ Setup Amandroid
 ---------------
 
 
-Before using Amandroid, you need to setup following environment variable:
+Before using Amandroid, you need to setup following environment variables:
 
-	``SIREUM_HOME``: points to Sireum's main directory. e.g.,:
+	``SIREUM_HOME``: points to Sireum's main directory. e.g.,
 	
 	.. code-block:: bash
 
 		$ export SIREUM_HOME=/path/AmandroidCli
 
-	``AMANDROID_HOME`` : points to Amandroid’s main directory. e.g.,:
+	``AMANDROID_HOME`` : points to Amandroid’s main directory. e.g.,
 
 	.. code-block:: bash
 
 		$ export AMANDROID_HOME=$SIREUM_HOME/Amandroid
+
+Adding the absolute path of ``SIREUM_HOME`` to the beginning of your ``PATH`` environment variable.
 
 
 Running Amandroid
