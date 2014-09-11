@@ -100,7 +100,7 @@ pygments_style = 'github'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'bootstrap'
+html_theme = 'default'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
@@ -210,7 +210,9 @@ html_static_path = ['.static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+    'docs/*': ['localtoc.html', 'relations.html'],
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.

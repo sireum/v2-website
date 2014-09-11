@@ -15,7 +15,7 @@ Setup Sireum CLI
 
 Sireum CLI setup is pretty strait-forward, following steps need to be followed: 
 
-	1. Download Sireum from http://www.sireum.org/software.html, and extract it in ``/path``. (Note that the path should not contain whitespaces.) This will create a Sireum directory in ``/path/Sireum``.
+	1. Download Sireum from http://www.sireum.org/software.html#downloading-sireum, and extract it in ``/path``. (Note that the path should not contain whitespaces.) This will create a Sireum directory in ``/path/Sireum``.
 
 	2. Setup following environment variables:
 
@@ -48,7 +48,7 @@ Sireum CLI setup is pretty strait-forward, following steps need to be followed:
 
 			$ sireum launch sireumdev -j "-Xms128m,-Xmx1024m" --args -clean
 
-		This will launch Eclipse IDE with all required pulgins. ``-j "-Xms512m,-Xmx4096m" --args -clean`` is the parameters give to Eclipse (you can modify it based on your machines performance).
+		This will launch Eclipse IDE with all required pulgins. ``-j "-Xms512m,-Xmx4096m" --args -clean`` is parameter gives to Eclipse (you can modify it based on your machines performance).
 
 
 After above steps you will get a working development platform with all the necessary plugins setup. Then it is time to get code of Amandroid.
@@ -95,7 +95,7 @@ Optain Amandroid Stash
 	
 		.. code-block:: bash
 
-			$ export SIREUM_HOME=/path/AmandroidCli
+			$ export SIREUM_HOME=/path/AmandroidStash
 
 		Do not change the directory structure with in Amandoid Stash.
 
