@@ -1,12 +1,18 @@
 Lectures
 ########
 
+.. _lectures:
+
 Lectures
 ********
 
 .. include:: def-contact.rst
 
+For daily activities, please see the :ref:`schedule` page.
+
 ----
+
+.. _spark2014:
 
 Introduction to Verification with |SPARK 2014|
 ==============================================
@@ -36,6 +42,8 @@ numeric overflow). Finally, we will touch on some of the more advanced
 proof techniques that may be required.  
 
 ----
+
+.. _kiasan:
 
 |Bakar Kiasan| -- A Certifying Program Verifier for High-Integrity Systems
 ==========================================================================
@@ -72,6 +80,8 @@ symbolic execution-based analysis, and will provide hands-on
 exercises using Bakar Kiasan to verify Spark 2014 program units.
 
 ----
+
+.. _scce:
 
 SCCE: Variability and Evolution through Integrated Domain, Data and Process Modeling
 ====================================================================================
@@ -134,6 +144,8 @@ code generator that is modeled in |jABC4| using modeling components
 generated from the very same specification.
 
 ----
+
+.. _smtkind:
 
 |SMT-LIB| and |Kind|
 ====================
