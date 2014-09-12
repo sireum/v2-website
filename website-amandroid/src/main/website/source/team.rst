@@ -127,7 +127,7 @@ Team
            <div class="panel-body">
              <table>
                <tr>
-                 <td><img src="_static/placeholder.png" height="140px"/></td>
+                 <td><img src="_static/jordan.jpg" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
                    <em>Undergraduate Student</em><br/>

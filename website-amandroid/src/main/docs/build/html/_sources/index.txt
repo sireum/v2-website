@@ -11,12 +11,12 @@ Welcome to Sireum Amandroid’s documentation!
 
    intro
    tutorial
+   devguide
+   examples
 
    faq
    glossary
-   devguide
    changes
-   examples
 
 
 

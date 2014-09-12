@@ -6,7 +6,9 @@ Documentation
 Manual
 ******
 
-:doc:`docs/contents`
+:ref:`comparison manual <python:comparisons>`
+
+:ref:`Amandroid docs <AmandroidDocs:index>`
 
 API docs
 ******

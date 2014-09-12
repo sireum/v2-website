@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>First Steps with Amandroid &mdash; Sireum Amandroid Docs 1.0 documentation</title>
+    <title>First Steps with Amandroid &mdash; Sireum Amandroid 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Sireum Amandroid Docs 1.0 documentation" href="index.html" />
+    <link rel="top" title="Sireum Amandroid 1.0 documentation" href="index.html" />
     <link rel="next" title="F&amp;Q" href="faq.html" />
     <link rel="prev" title="Introduction" href="intro.html" /> 
   </head>
@@ -40,7 +40,7 @@
         <li class="right" >
           <a href="intro.html" title="Introduction"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Sireum Amandroid Docs 1.0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">Sireum Amandroid 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -58,15 +58,12 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
 <div class="sidebar">
 <p class="first sidebar-title">Sireum</p>
 <p>Sireum is a long-term research effort to develop an over-arching software analysis platform that incorporates various static analysis techniques such as data-flow framework, model checking, symbolic execution, abstract interpretation, and deductive reasoning techniques (e.g., using weakest precondition calculation). It can be used to build various kinds of software static analyzers for different kinds of properties.</p>
-<p class="last">To get more detailed information about how Sireum works, please follow instructions at <a class="reference external" href="http://www.sireum.org/software.html">http://www.sireum.org/software.html</a>.</p>
+<p class="last">To get more detailed information about how Sireum CLI works, please follow instructions at <a class="reference external" href="http://www.sireum.org/software.html">http://www.sireum.org/software.html</a>.</p>
 </div>
 <p>Sireum CLI setup is pretty strait-forward, following steps need to be followed:</p>
-<ol class="arabic">
-<li><p class="first">Download Sireum from <a class="reference external" href="http://www.sireum.org/software.html#downloading-sireum">http://www.sireum.org/software.html#downloading-sireum</a>, and extract it in <tt class="docutils literal"><span class="pre">/path</span></tt>. (Note that the path should not contain whitespaces.) This will create a Sireum directory in <tt class="docutils literal"><span class="pre">/path/Sireum</span></tt>.</p>
-</li>
-<li><p class="first">Setup following environment variables:</p>
-<blockquote>
-<div><p><tt class="docutils literal"><span class="pre">SIREUM_HOME</span></tt>: points to Sireum&#8217;s main directory. e.g.,</p>
+<p>1.Download <a class="reference external" href="http://www.sireum.org/software.html#downloading-sireum">Sireum</a>, and extract it in <tt class="docutils literal"><span class="pre">/path</span></tt>. (Note that the path should not contain whitespaces.) This will create a Sireum directory in <tt class="docutils literal"><span class="pre">/path/Sireum</span></tt>.</p>
+<p>2.Setup following environment variables:</p>
+<p><tt class="docutils literal"><span class="pre">SIREUM_HOME</span></tt>: points to Sireum&#8217;s main directory. e.g.,</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">SIREUM_HOME</span><span class="o">=</span>/path/AmandroidCli
 </pre></div>
 </div>
@@ -75,73 +72,51 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">SIREUM_UPDATE</span><span class="o">=</span>http://update.sireum.org/dev/latest
 </pre></div>
 </div>
-</div></blockquote>
-</li>
-<li><p class="first">Initialize Sireum CLI:</p>
-<blockquote>
-<div><div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum
+<p>3.Initialize Sireum CLI:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum
 </pre></div>
 </div>
 <p>If this is your first time running Sireum, <a class="reference external" href="http://www.sireum.org/software.html#sireum-distro">Sireum Distro</a> will automatically download the appropriate files for Sireum CLI and store them in <tt class="docutils literal"><span class="pre">SIREUM_HOME</span></tt>.</p>
-</div></blockquote>
-</li>
-<li><p class="first">Launch Eclipse:</p>
-<blockquote>
-<div><div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum launch sireumdev -j <span class="s2">&quot;-Xms128m,-Xmx1024m&quot;</span> --args -clean
+<p>4.Launch Eclipse:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum launch sireumdev -j <span class="s2">&quot;-Xms128m,-Xmx1024m&quot;</span> --args -clean
 </pre></div>
 </div>
 <p>This will launch Eclipse IDE with all required pulgins. <tt class="docutils literal"><span class="pre">-j</span> <span class="pre">&quot;-Xms512m,-Xmx4096m&quot;</span> <span class="pre">--args</span> <span class="pre">-clean</span></tt> is parameter gives to Eclipse (you can modify it based on your machines performance).</p>
-</div></blockquote>
-</li>
-</ol>
 <p>After above steps you will get a working development platform with all the necessary plugins setup. Then it is time to get code of Amandroid.</p>
 </div>
 <div class="section" id="checking-out-the-source-of-amandroid">
 <h2>Checking Out the Source of Amandroid<a class="headerlink" href="#checking-out-the-source-of-amandroid" title="Permalink to this headline">¶</a></h2>
 <p>Amandroid is implemented on top of <a class="reference external" href="https://github.com/sireum">Sireum</a>, so following Sireum repositories are needed to be able to run Amandroid:</p>
-<blockquote>
-<div><p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Prelude</span></tt>: <a class="reference external" href="https://github.com/sireum/prelude">https://github.com/sireum/prelude</a></p>
+<p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Prelude</span></tt>: <a class="reference external" href="https://github.com/sireum/prelude">https://github.com/sireum/prelude</a></p>
 <p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Parser</span></tt>: <a class="reference external" href="https://github.com/sireum/parser">https://github.com/sireum/parser</a></p>
 <p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Core</span></tt>: <a class="reference external" href="https://github.com/fgwei/core">https://github.com/fgwei/core</a></p>
 <p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Jawa</span></tt>: <a class="reference external" href="https://github.com/santoslab/sireum-jawa">https://github.com/santoslab/sireum-jawa</a></p>
-</div></blockquote>
 <p>Amandroid’s repository:</p>
-<blockquote>
-<div><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Amandroid</span></tt>: <a class="reference external" href="https://github.com/santoslab/sireum-amandroid">https://github.com/santoslab/sireum-amandroid</a></div></blockquote>
+<p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Amandroid</span></tt>: <a class="reference external" href="https://github.com/santoslab/sireum-amandroid">https://github.com/santoslab/sireum-amandroid</a></p>
 <p>Clone all the required repositories into your workspace using Eclipse:</p>
-<ol class="arabic">
-<li><p class="first">Switch to the Git Repository Exploring perspective in Eclipse.</p>
-</li>
-<li><p class="first">Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.</p>
-</li>
-<li><p class="first">Wait for the repository to be cloned—this may take a couple of minutes.</p>
-</li>
-<li><p class="first">Import all the projects by:</p>
-<blockquote>
-<div><p>right-click on each repository -&gt; select <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">Projects</span> <span class="pre">…</span></tt> -&gt; check <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">existing</span> <span class="pre">projects</span></tt> and go <tt class="docutils literal"><span class="pre">Next</span></tt> -&gt; Click <tt class="docutils literal"><span class="pre">Finish</span></tt> with all projects checked.</p>
-</div></blockquote>
-</li>
-<li><p class="first">Wait for the projects to be imported, and the indexing to finish.</p>
-</li>
-</ol>
+<p>1.Switch to the Git Repository Exploring perspective in Eclipse.</p>
+<p>2.Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.</p>
+<p>3.Wait for the repository to be cloned—this may take a couple of minutes.</p>
+<p>4.Import all the projects by:</p>
+<p>right-click on each repository -&gt; select <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">Projects</span> <span class="pre">…</span></tt> -&gt; check <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">existing</span> <span class="pre">projects</span></tt> and go <tt class="docutils literal"><span class="pre">Next</span></tt> -&gt; Click <tt class="docutils literal"><span class="pre">Finish</span></tt> with all projects checked.</p>
+<p>5.Wait for the projects to be imported, and the indexing to finish.</p>
 </div>
 <div class="section" id="optain-amandroid-stash">
 <h2>Optain Amandroid Stash<a class="headerlink" href="#optain-amandroid-stash" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Download Amandroid Stash from xxx,</li>
-<li>Setup environment variable:</li>
-</ol>
+<p>1.Download Amandroid Stash from xxx,</p>
+<p>2.Setup environment variable:</p>
 <p><tt class="docutils literal"><span class="pre">AMANDROID_HOME</span></tt>: points to Amandroid Stash’s main directory. e.g.,</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">SIREUM_HOME</span><span class="o">=</span>/path/AmandroidStash
 </pre></div>
 </div>
-<p>Do not change the directory structure with in Amandoid Stash.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do not change the directory structure with in Amandoid Stash.</p>
+</div>
 </div>
 <div class="section" id="troubleshooting">
 <h2>TroubleShooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.</li>
-</ol>
+<p>1.Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.</p>
 </div>
 </div>
 
@@ -197,11 +172,11 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
         <li class="right" >
           <a href="intro.html" title="Introduction"
              >previous</a> |</li>
-        <li><a href="index.html">Sireum Amandroid Docs 1.0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">Sireum Amandroid 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2014, Fengguo Wei, Sankardas Roy.
+        &copy; Copyright 2014, Fengguo Wei &amp; Sankardas Roy.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>

@@ -30,7 +30,7 @@ import sphinx_bootstrap_theme
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['sphinx.ext.intersphinx',]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['.templates']
@@ -100,7 +100,7 @@ pygments_style = 'github'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'bootstrap'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
@@ -243,3 +243,9 @@ html_show_copyright = False
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
+
+# Example configuration for intersphinx: refer to the Amandroid Docs.
+intersphinx_mapping = {
+    'AmandroidDocs' : ('file:///Users/FengguoWei/Developer/git-repo/website/website-amandroid/src/main/docs/build/html', None),
+    'python': ('http://docs.python.org/3.2', None),
+}
