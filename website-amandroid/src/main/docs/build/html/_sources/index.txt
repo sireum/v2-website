@@ -11,6 +11,7 @@ Welcome to Sireum Amandroid’s documentation!
 
    intro
    tutorial
+   approach
    devguide
    examples
 

@@ -1,6 +1,10 @@
+.. include:: def-contact.rst
+
 Introduction
 ##############
 
+Overview
+======================
 
 Amandroid is a static analysis framework for Android apps.
 
@@ -15,3 +19,28 @@ Since Amandroid directly handles Inter-component control and data flows, it can 
 On top of Amandroid we performed certain specific security analyses, for instance, a) user password flow tracking, b) intent injection detection, and c) crypto API misuse checking. We apply those analyses on hundreds of apps collected from Google Play’s popular apps and a third-party security company, and the results show that it is capable of finding real security issues and efficient enough in terms of analysis time.
 
 
+Amandroid Workflow
+=====================
+
+.. figure:: _static/detailpipeline.png
+   :height: 500px
+   :width: 800 px
+   :alt: alternate text
+   :align: center
+
+   Figure: This is the pipeline of Amandroid framework.
+
+
+.. sidebar:: Pilar
+
+	Pilar is a highly flexible, typed, annotation based intermediate representation language designed by |Robby|.
+
+	Pilar is the IR we used in Amandroid analysis, and we decompile dalvik bytecode to Pilar via modifying dexdump program.
+
+Amandroid take an Android APK ``x`` as the input, then it works as following:
+
+1.Extract ``x``, then parse ``*.dex`` file to Dex2Pilar module and other files (like ``*.xml``, ``resource.arsc``) to Preprocess module.
+
+2a.``Dex2PilarConverter`` in ``Dex2Pilar`` module will decompile the ``*.dex`` file into Pilar format.
+
+2b.Parsers in ``Preprocess`` module can provide app’s information to ``AppInfoCollector``. Developer can specify what kind of information he/she is interested and non-interesting app can be ignored. Finally, ``Preprocess`` module will output meta data of ``x``.

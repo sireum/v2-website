@@ -7,7 +7,6 @@ For helping you quickly understand how to develop using Amandroid.
 Amandroid Architecture
 ======================
 
-W
 
 Collect Information from APK
 ======================
