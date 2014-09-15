@@ -73,8 +73,16 @@
 </div>
 <p>Amandroid take an Android APK <tt class="docutils literal"><span class="pre">x</span></tt> as the input, then it works as following:</p>
 <p>1.Extract <tt class="docutils literal"><span class="pre">x</span></tt>, then parse <tt class="docutils literal"><span class="pre">*.dex</span></tt> file to Dex2Pilar module and other files (like <tt class="docutils literal"><span class="pre">*.xml</span></tt>, <tt class="docutils literal"><span class="pre">resource.arsc</span></tt>) to Preprocess module.</p>
-<p>2a.``Dex2PilarConverter`` in <tt class="docutils literal"><span class="pre">Dex2Pilar</span></tt> module will decompile the <tt class="docutils literal"><span class="pre">*.dex</span></tt> file into Pilar format.</p>
+<p>2a.``Dex2PilarConverter`` in <tt class="docutils literal"><span class="pre">Dex2Pilar</span></tt> module decompile the <tt class="docutils literal"><span class="pre">*.dex</span></tt> file into Pilar format.</p>
 <p>2b.Parsers in <tt class="docutils literal"><span class="pre">Preprocess</span></tt> module can provide app’s information to <tt class="docutils literal"><span class="pre">AppInfoCollector</span></tt>. Developer can specify what kind of information he/she is interested and non-interesting app can be ignored. Finally, <tt class="docutils literal"><span class="pre">Preprocess</span></tt> module will output meta data of <tt class="docutils literal"><span class="pre">x</span></tt>.</p>
+<p>3.``AndroidEnvironmentGenerator`` in <tt class="docutils literal"><span class="pre">EnvironmentBuilder</span></tt> is getting all sources codes and meta datas from previous step, then
+<em class="xref std std-ref">building the environment method</em> for each of the component.</p>
+<p>4.``DataFlowFramework`` provide data flow analysis technics to examine data flow problems. <tt class="docutils literal"><span class="pre">AndroidReachingFactsAnalysis</span></tt> takes environment methods as the entry points and <em class="xref std std-ref">build IDFG</em>. <tt class="docutils literal"><span class="pre">InterproceduralDataDependenceAnalysis</span></tt> takes IDFG and <em class="xref std std-ref">build DDG</em>. <tt class="docutils literal"><span class="pre">AndroidDataDependentTaintAnalysis</span></tt> takes DDG and SourceAndSinkManager (provided by the developer) to do taint analysis and output taint result.</p>
+<p>5.Developer specified analyze plugin</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Source codes and environment appeals above are all Pilar format.</p>
+</div>
 </div>
 </div>
 
