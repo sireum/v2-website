@@ -108,7 +108,8 @@ html_theme = 'default'
 # documentation.
 html_theme_options = {
     "rightsidebar": "true",
-    "relbarbgcolor": "black"
+    "relbarbgcolor": "black",
+    "stickysidebar" : "true"
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

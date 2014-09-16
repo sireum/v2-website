@@ -1,3 +1,4 @@
+.. _intro:
 .. include:: def-contact.rst
 
 Introduction
@@ -41,6 +42,21 @@ Amandroid take an Android APK ``x`` as the input, then it works as following:
 
 1.Extract ``x``, then parse ``*.dex`` file to Dex2Pilar module and other files (like ``*.xml``, ``resource.arsc``) to Preprocess module.
 
-2a.``Dex2PilarConverter`` in ``Dex2Pilar`` module will decompile the ``*.dex`` file into Pilar format.
+2a.``Dex2PilarConverter`` in ``Dex2Pilar`` module :ref:`decompile <IR-tran>` the ``*.dex`` file into Pilar format.
 
 2b.Parsers in ``Preprocess`` module can provide app’s information to ``AppInfoCollector``. Developer can specify what kind of information he/she is interested and non-interesting app can be ignored. Finally, ``Preprocess`` module will output meta data of ``x``.
+
+3.``AndroidEnvironmentGenerator`` in ``EnvironmentBuilder`` is getting all sources codes and meta datas from previous step, then 
+:ref:`building the environment method <env-model>` for each of the component.
+
+4.``DataFlowFramework`` provide data flow analysis technics to examine data flow problems. 
+
+``AndroidReachingFactsAnalysis`` takes environment methods as the entry points and :ref:`build IDFG <IDFG>`. 
+
+``InterproceduralDataDependenceAnalysis`` takes IDFG and :ref:`build DDG <DDG>`. 
+
+``AndroidDataDependentTaintAnalysis`` takes DDG and SourceAndSinkManager (provided by the developer) to do taint analysis and output taint result.
+
+5.Developer specified plugin get all the result, then he/she can do further analysis or visualize it in certain way.
+
+.. Note:: Source codes and environment appeals above are all Pilar format.
