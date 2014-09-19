@@ -197,7 +197,7 @@ For the sake of concreteness, let us present a concrete plugin. Below is an exce
 			System.err.print("Usage: source_path output_path")
 			return
 		}
-		MessageCenter.msglevel = MessageCenter.MSG_LEVEL.CRITICAL
+		MessageCenter.msglevel = MessageCenter.MSG_LEVEL.CRITICAL // setting the status message level e.g. verbose, normal, critical, etc.
 	
 		AndroidReachingFactsAnalysisConfig.k_context = 1
 		AndroidReachingFactsAnalysisConfig.resolve_icc = true
@@ -224,15 +224,71 @@ For the sake of concreteness, let us present a concrete plugin. Below is an exce
 		}
 	}
 
+At the end of the analysis, the results are collected from the ``AppCenter``. For this purpose, you will implement ``onAnalysisSuccess`` method of the ``AmandroidSocketListener``. Below is the example for ``intent injection detection`` plugin.
+
+.. code-block:: scala
+
+	def onAnalysisSuccess : Unit = {
+		if(AppCenter.getTaintAnalysisResults.exists(...)){
+			IntentInjectionCounter.havePath += 1 // counting the number of taint paths
+		}
+	val appData = DataCollector.collect // collect all relevant data from the AppCenter
+	... // report or store your analysis results as you want
+	}
+
 (ii) Analyses which do not require DDG results
 ***********************************************
-An example of this type of analysis is "crypto-API misuse detection". The misuse is detected via inspecting the parameter values of such an API, and matching them with the set of vulnerable signatures. To perform this type of analysis you would need to use CollectInformation APIs, and BuildIDFG APIs. 
-Note that you will not need a Source-Sink manager in this case neither you will use a socket. 
-Instead, you will directly use the above APIs to know the values of different variables or parameters, and solve your problem.  
+An example of this type of analysis is "crypto-API misuse detection". 
+The misuse is detected via inspecting the parameter values of such an API, 
+and matching them with the known set of vulnerable signatures. To perform this type of analysis, 
+you can again use ``AmandroidSocket``. However, this time you will not need a source-sink manager. 
 
-Finally, one tip in reducing the average analysis time. In reality, it is very useful if you can quickly figure out whether 
-an app is interesting in the context of your analysis. That can allow you to discard an app after a light analysis 
-and to run heavy analysis only if the app is interesting. As we discussed before, via AmandroidSocketListener 
-you can specify a discard policy (i.e., specify what is not "interesting" to you). 
-As an example, if you are designing a password leak detection plugin, it is natural to discard an app 
-from which AppInfoCollector was not able to discover any "password" field in one of the app layouts.  
+For the sake of concreteness, let us present a concrete plugin. Below is an excerpt of the ``main`` method of the ``crypto-API misuse detection`` plugin. 
+This contains some of aforementioned pieces of code. One notable difference is of using ``socket.runWithoutDDA`` instead of ``socket.runWithDDA``.
+Unlike the previous example, here the specific analysis (detecting misuse of a crypto-API) is done after we execute ``socket.runWithoutDDA``. 
+Another difference is here we collect the analysis results inside the ``main`` method instead of ``onAnalysisSuccess`` method of the ``AmandroidSocketListener``.
+
+.. code-block:: scala
+
+	def main(args: Array[String]): Unit = {
+		if(args.size != 2){
+			System.err.print("Usage: source_path output_path")
+			return
+		}
+		MessageCenter.msglevel = MessageCenter.MSG_LEVEL.CRITICAL // setting the status message level e.g. verbose, normal, critical, etc.
+	
+		AndroidReachingFactsAnalysisConfig.k_context = 1
+		AndroidReachingFactsAnalysisConfig.resolve_icc = true
+		AndroidReachingFactsAnalysisConfig.resolve_static_init = false
+		AndroidReachingFactsAnalysisConfig.timerOpt = Some(new Timer(5))
+			    
+		val socket = new AmandroidSocket
+		socket.preProcess
+
+						    
+		val sourcePath = args(0)
+		val outputPath = args(1)
+		val files = FileUtil.listFiles(FileUtil.toUri(sourcePath), ".apk", true).toSet
+		files.foreach{ // for each apk file do the analysis
+			file =>
+				msg_critical(TITLE, "####" + file + "#####") // printing messages
+				val app_info = new InterestingApiCollector(file)
+				socket.loadApk(file, outputPath, AndroidLibraryAPISummary, app_info)
+				val listener = new CryptoMisuseListener // we have to make this line consistent with the codebase
+				socket.plugListener(Some(listener)) // we have to make this line consistent with the codebase
+				socket.runWithoutDDA(false, true) // The first param indicates whether to process only public components while the second param is to on/off parallel processing
+				                           // we have to make this line consistent with the codebase
+				val icfgs = AppCenter.getInterproceduralReachingFactsAnalysisResults
+				icfgs.foreach{
+				case (rec, (icfg, irfaResult)) =>
+					CryptographicMisuse(new InterProceduralDataFlowGraph(icfg, irfaResult)) // here we check the misuse of a crypto-API and collect results
+				}
+		}
+	}
+
+.. note:: Finally, one tip in reducing the average analysis time. In reality, it is very useful if you can quickly figure out whether 
+	an app is interesting in the context of your analysis. That can allow you to discard an app after a light analysis 
+	and to run heavy analysis only if the app is interesting. As we discussed before, via AmandroidSocketListener 
+	you can specify a discard policy (i.e., specify what is not *interesting* to you). 
+	As an example, if you are designing a password leak detection plugin, it is natural to discard an app 
+	from which AppInfoCollector was not able to discover any ``password`` field in one of the app layouts.  
