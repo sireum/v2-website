@@ -25,7 +25,7 @@ Getting Started
 Downloading Amandroid
 --------------------
 
-*  Amandroid (Beta 0.1): `Mac64 <http://people.cis.ksu.edu/~fgwei/resources/AmandroidCli-mac64.zip>`__, Linux64
+*  Amandroid (Beta 0.2): `Mac64 <http://people.cis.ksu.edu/~fgwei/resources/v0.2/AmandroidCli-mac64.zip>`__, `Linux64 <http://people.cis.ksu.edu/~fgwei/resources/v0.2/AmandroidCli-linux64.zip>`__
 
 Download the distribution appropriate for your platform and uncompress it in, e.g., ``~/Applications``. (Note that the path should not contain whitespaces.)
 This will create a Amandroid directory in ``~/Applications/AmandroidCli``. Let’s call this directory ``SIREUM_HOME`` (as Amandroid is using `Sireum <http://www.sireum.org/>`__). The rest of the instructions below assume the command ``sireum`` to refer to ``SIREUM_HOME/sireum`` (relative or absolute path); you can make sure that this is always the case by, for instance, adding the absolute path of ``SIREUM_HOME`` to the **beginning** of your ``PATH`` environment variable.
@@ -48,7 +48,7 @@ Before using Amandroid, you need to setup following environment variables:
 
 	.. code-block:: bash
 
-		$ export AMANDROID_HOME=$SIREUM_HOME/Amandroid
+		$ export AMANDROID_HOME=$SIREUM_HOME/apps/amandroid
 
 Adding the absolute path of ``SIREUM_HOME`` to the beginning of your ``PATH`` environment variable.
 
@@ -64,8 +64,15 @@ To run Amandroid, in a terminal command prompt, type:
 
 After running above command you will get the list of existing Amandroid plugins. You may choose one of them and perform such analysis.
 
+Example commands:
 
-.. note:: Each plugin may need to set several options, and option [``-ni``, ``-ns``, ``-par``] is special: when you set such option you need to use something like: ``-ni true``, and if you want false, you don’t need to specify such option.
+.. code-block:: bash
+
+	$ ./sireum x amandroid decompile /path/some.apk /outputPath
+
+.. code-block:: bash
+
+	$ ./sireum x amandroid taintAnalysis -m 12 -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
 
 
 .. tip:: Mode Prefix

@@ -6,9 +6,7 @@ Documentation
 Manual
 ******
 
-:ref:`comparison manual <python:comparisons>`
-
-:ref:`Amandroid docs <AmandroidDocs:index>`
+under construction
 
 API docs
 ******
