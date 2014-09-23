@@ -50,12 +50,12 @@ Below are a few examples of invoking these APIs and some of their usage.
 
 .. code-block:: scala
 
-	val apkFileUri = "file://" + path-to-the-apk-file
+	val apkFileUri = FileUtil.toUri(path-to-the-apk-file) // FileUtil is in org.sireum.util package; toUri(pathString) = "file://" + pathString
 	val mfp = AppInfoCollector.analyzeManifest(apkFileUri) // mfp is a Manifest file parser
 	val afp = AppInfoCollector.analyzeARSC(apkFileUri) // afp is an ARSC file parser
 	val lfp = AppInfoCollector.analyzeLayouts(apkFileUri, mfp) // lfp is a layout files parser
 	val ra = AppInfoCollector.reachabilityAnalysis(mfp) // a basic reachability analyzer that is used below
-	val callbacks = AppInfoCollector.analyzeCallback(afp, lfp, ra) // the set of callback methods discovered
+	val callbackMethods = AppInfoCollector.analyzeCallback(afp, lfp, ra) // the set of callback methods discovered
 	val appPackageName = mfp.getPackageName // the full name of the package
 	val componentInfos = mfp.getComponentInfos // the list of components in the app and their basic information
 	val uses_permissions = mfp.getPermissions // the list of permissions used by the app
@@ -71,8 +71,6 @@ Before we discuss how to use these APIs or ``AmandroidSocket``, let us first men
 (e.g., ``calling context length K``) of the analysis platform, 
 i.e., how to set the basic configuration parameters for the IDFG analysis (also called ``AndroidReachingFactsAnalysis``).
 
-Setting Analysis Configurations
-********************************
 
 The configuration parameters are set via acessing ``AndroidReachingFactsAnalysisConfig`` object (in package ``org.sireum.amandroid.alir.reachingFactsAnalysis``). 
 You can choose values according to your needs. One example follows.
@@ -100,8 +98,9 @@ You can invoke the IDFG building API as follows (where ``AndroidReachingFactsAna
 You can use the above API to build the IDFG, and then you can access the reachable facts at an arbitrary statement. 
 For instance, for a network I/O statement in the app your plugin can query (to the IDFG) for the used ``urls``, in case that is important for your analysis.    
 
-To give a concrete example, our ``crypto-API misuse detection`` plugin checks the reachable facts at a crypto-API statement to detect the misuse. 
-Basically, if a parameter of the API is seen to have miscofigured values, we flag a misuse. The code is as follows.
+To give a concrete example, let us refer to the ``crypto-API misuse detection`` plugin. The code snippet is as follows. 
+``CryptographicMisuse`` checks the reachable facts at a crypto-API statement to detect the misuse. 
+Basically, if a parameter of the API is seen to have miscofigured values, we flag a misuse.
 
 .. code-block:: scala
 
@@ -147,8 +146,8 @@ Below is a code snippet to show how to retrieve and use the taint results.
 
 .. code-block:: scala
 
-	taintResult = if(AppCenter.hasTaintAnalysisResult(compRec)) Some(AppCenter.getTaintAnalysisResult(compRec)) else None
-	val taintPaths = taintResultOpt.get.getTaintedPaths
+	val taintResult = AppCenter.getTaintAnalysisResult(ep) // The type ``TaintAnalysisResult`` is declared in package org.sireum.jawa.alir.taintAnalysis
+	val taintPaths = taintResult.getTaintedPaths
 	taintPaths.foreach{
 	   taintPath =>
 	         val pathString : ArrayList[String] = new ArrayList[String]
@@ -159,8 +158,9 @@ Below is a code snippet to show how to retrieve and use the taint results.
 How to Design a Plugin
 ========================
 
-It is easy to develop a new plugin tool on top of Amandroid provided your new analysis is related with data flow. 
-Basically, you can use ``AmandroidSocket`` (available in package ``org.sireum.amandroid.security``) or invoke the Amandroid APIs to have the building blocks ready for you. 
+It is easy to develop a new plugin tool on top of Amandroid provided your new analysis is based on data flow. 
+Basically, either you can use ``AmandroidSocket`` wrapper (available in package ``org.sireum.amandroid.security``) 
+or you can directly invoke the Amandroid APIs to have the building blocks ready for you. 
 The new plugin only needs to use these building blocks in implementing your special analysis logic. 
 
 We hope that in most cases accessing ``AmandroidSocket`` should be enough for completing the design of your plugin.
@@ -173,27 +173,29 @@ You may start the socket as follows.
 
 In your plugin code, you only need to provide necessary inputs to ``AmandroidSocket``, and then that will run the analysis for you. 
 In total, ``AmandroidSocket`` demands at most two things (objects) from your side: 
-(a) an ``AppInfoCollector``, (b) an optional ``AmandroidSocketListener`` (available in package ``org.sireum.amandroid.security``).   
+(a) an ``AppInfoCollector`` (available in package ``org.sireum.amandroid.appInfo``), and  
+(b) an optional ``AmandroidSocketListener`` (available in package ``org.sireum.amandroid.security``).   
 
 You can customize the ``AppInfoCollector`` for your specific analysis requirement. 
 As an example, for our ``password leakage detection`` plugin, we customized the ``AppInfoCollector`` to build ``SensitiveViewCollector`` (in package ``org.sireum.amandroid.security.password``)
-that has additional capability of determining which set of components holds a ``password`` containing screen. 
-If you do not need a special information collector like this, you may just use the default ``AppInfoCollector`` given in the codebase (in package ``in package org.sireum.amandroid.appInfo``). 
+that has additional capability of determining which set of components hold a ``password`` containing screen. 
+If you do not need a special information collector, you may just use the default ``AppInfoCollector`` given in the codebase (in package ``in package org.sireum.amandroid.appInfo``). 
 
 We connect the ``AppInfoCollector`` with the socket in the following way.
 
 .. code-block:: scala
 
 	val app_info = new SensitiveViewCollector(apkFileUri) // creating a special AppInfoCollector
-	socket.loadApk(apkFileUri, outputPath, thirdPartyLibraryDetector, app_info) // outputPath will store the results, such as Pilar tranformation of the bytecode
+	socket.loadApk(apkFileUri, outputPath, ThirdPartyLibraryDetector, app_info) // outputPath will store the results, such as Pilar tranformation of the bytecode
                         
 
-The ``thirdPartyLibraryDetector`` class detects which code portion of the app is from wellknown third parties (such as ``apache``) 
-so that you can ignore the analysis of their code if you wish so to reduce the analysis time. Nevertheless, 
-if you do want to analyze a third party library, then just do not include that name in the list of the ``thirdPartyLibraryDetector``.
+The ``ThirdPartyLibraryDetector`` object (in package ``org.sireum.amandroid.util``) detects which code portion of the app is from the wellknown third parties (such as ``apache``) 
+so that you can ignore the analysis of that code portion (as if they are part of Android library) if you wish so to reduce the analysis time. Nevertheless, 
+if you do want to analyze a third party library, then just do not include that name in the ignore-list of the ``ThirdPartyLibraryDetector``. 
+The package ``org.sireum.jawa`` includes a ``DefaultThirdPartyLibraryDetector`` that does not ignore any third party library, i.e. makes us analyze all of them.
 
-You may also plug a ``AmandroidSocketListener`` to the socket. This listener gives you a chance to customize the socket operations according to your needs. 
-If you do not provide any listener then the socket will take a default policy. The listener has a set of methods which you implement. 
+You may also plug an ``AmandroidSocketListener`` (ref. ``org.sireum.amandroid.security`` package) to the socket. This listener gives you a chance to customize the socket operations according to your needs. 
+If you do not provide any listener then the socket will take a default policy. The listener has a set of methods which you would like to implement. 
 The basic job of some of these methods are as follows: 
 
 * ``onPreAnalysis``: Do what you want before the analysis starts. 
@@ -204,10 +206,10 @@ Below is an example of how we create an ``AmandroidSocketListener`` for ``passwo
 
 .. code-block:: scala
 
-	val listener = new PasswordTrackingListener(apkFileUri, app_info)
+	val listener = new PasswordTrackingListener(apkFileUri, app_info) // creating a special AmandroidSocketListener
 	socket.plugListener(listener)
 
-We envision two types of data flow analyses you might be interested in. Some details with examples are as follows. Hopefully, they will help you in designing your new plugin.
+We envision two types of data flow analyses you might be interested in. Some details with examples follow. Hopefully, they will help you in designing your new plugin.
 
 (i) Analyses which require DDG results
 ***************************************
@@ -217,8 +219,10 @@ And (b) ``intent injection detection``: You need to find a taint path from an in
 This type of analyses require a source-sink manager while the role of the source-sink manager is to identify the source points and sink points in the app relavent to your problem.
 In a ``data leak detection`` analysis, any point through which a sensitive information can enter into the app (e.g. the ``password`` field in an app layout) 
 is considered as a ``source`` while any information exit point (e.g. a network write operation) is a sink. 
-Amandroid includes a basic manager called ``DefaultAndroidSourceAndSinkManager``. You can customize it according to your needs by overriding certain methods. 
-As an example, for the ``intent injection detection`` plugin, the ``source`` is any incoming ``intent`` to a public ``Activity``, 
+Amandroid includes a basic manager called ``DefaultAndroidSourceAndSinkManager`` (in package ``org.sireum.amandroid.alir.taintAnalysis``). 
+You can customize it according to your needs by overriding certain methods. 
+As an example, for the ``intent injection detection`` plugin, we implemented ``IntentInjectionSourceAndSinkManager`` (available in package ``org.sireum.amandroid.security.dataInjection``), 
+where the ``source`` is any incoming ``intent`` to a public ``Activity``, 
 while the ``sink`` can be the same as that in ``data leak detection`` plugin.    
 
 Below is an example of how we create a source-sink manager for the ``password leakage detection`` plugin.
@@ -234,7 +238,8 @@ Below is an example of how we do it for ``password leakage detection`` plugin wi
 
 	socket.runWithDDA(ssm, false, true) // The second param indicates whether to process only public components while the third param is to on/off parallel processing
 
-For the sake of concreteness, let us present a concrete plugin. Below is an excerpt of the ``main`` method of the ``password leakage detection`` plugin, which contains aforementioned pieces of code.
+For the sake of concreteness, let us now present a code snippet from an example plugin. Below is an excerpt of the ``main`` method of the ``password leakage detection`` plugin.
+Note that this contains many of the aforementioned pieces of code.
 
 
 .. code-block:: scala
@@ -264,13 +269,15 @@ For the sake of concreteness, let us present a concrete plugin. Below is an exce
 	          socket.loadApk(file, outputPath, AndroidLibraryAPISummary, app_info)
 	          ...
 	          val listener = new PasswordTrackingListener(file, app_info)
-	          socket.plugListener(Some(listener)) // make the codebase consistent
+	          socket.plugListener(listener) // make the codebase consistent
 	          val ssm = new PasswordSourceAndSinkManager(app_info.getPackageName, app_info.getLayoutControls, app_info.getCallbackMethods, AndroidGlobalConfig.PasswordSinkFilePath)
 	          socket.runWithDDA(ssm, false, true) // make the codebase consistent
 	   }
 	}
 
-At the end of the analysis, the results are collected from the ``AppCenter``. For this purpose, you will implement ``onAnalysisSuccess`` method of the ``AmandroidSocketListener``. Below is the example for ``intent injection detection`` plugin.
+At the end of the analysis, you can collect the results from the ``AppCenter``. Note that this can be done in many ways from multiple locations. 
+As one possible way, you can implement the ``onAnalysisSuccess`` method of the ``AmandroidSocketListener`` to serve this purpose. 
+Below is such an example from the ``intent injection detection`` plugin.
 
 .. code-block:: scala
 
@@ -289,9 +296,9 @@ The misuse is detected via inspecting the parameter values of such an API,
 and matching them with the known set of vulnerable signatures. To perform this type of analysis, 
 you can again use ``AmandroidSocket``. However, this time you will not need a source-sink manager. 
 
-For the sake of concreteness, let us present a concrete plugin. Below is an excerpt of the ``main`` method of the ``crypto-API misuse detection`` plugin. 
+For the sake of concreteness, let us refer to a concrete plugin. Below is an excerpt of the ``main`` method of the ``crypto-API misuse detection`` plugin. 
 This contains some of aforementioned pieces of code. One notable difference is of using ``socket.runWithoutDDA`` instead of ``socket.runWithDDA``.
-Unlike the previous example, here the specific analysis (detecting misuse of a crypto-API) is done after we execute ``socket.runWithoutDDA``. 
+Unlike the previous example, here the specific analysis (detecting misuse of a crypto-API) is done after we execute the socket (i.e. ``socket.runWithoutDDA``). 
 Another difference is here we collect the analysis results inside the ``main`` method instead of ``onAnalysisSuccess`` method of the ``AmandroidSocketListener``.
 
 .. code-block:: scala
@@ -320,7 +327,7 @@ Another difference is here we collect the analysis results inside the ``main`` m
 	           val app_info = new InterestingApiCollector(file)
 	           socket.loadApk(file, outputPath, AndroidLibraryAPISummary, app_info)
 	           val listener = new CryptoMisuseListener // we have to make this line consistent with the codebase
-	           socket.plugListener(Some(listener)) // we have to make this line consistent with the codebase
+	           socket.plugListener(listener) // we have to make this line consistent with the codebase
 	           socket.runWithoutDDA(false, true) // The first param indicates whether to process only public components while the second param is to on/off parallel processing
 				                           // we have to make this line consistent with the codebase
 	           val icfgs = AppCenter.getInterproceduralReachingFactsAnalysisResults
