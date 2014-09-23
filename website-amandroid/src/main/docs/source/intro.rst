@@ -7,6 +7,10 @@ Introduction
 Overview
 ======================
 
+.. sidebar:: Amandroid meaning
+
+	Aman means secure in Indonesian, so Amandroid means secure android.
+
 Amandroid is a static analysis framework for Android apps.
 
 The Android platform is immensely popular. However, malicious or vulnerable applications have been reported to cause several security problems. Currently there is no effective method that a market operator can use to vet apps entering a market (e.g., Google Play).
@@ -29,7 +33,7 @@ Amandroid Workflow
    :alt: alternate text
    :align: center
 
-   Figure: This is the pipeline of Amandroid framework.
+   Figure: The pipeline of Amandroid framework.
 
 
 .. sidebar:: Pilar

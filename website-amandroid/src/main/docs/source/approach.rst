@@ -24,9 +24,84 @@ An Android app is not a closed system; the Android system provides an environmen
 Inter-component Data Flow Graph (IDFG)
 ====================
 
+Determining object points-to information is a core underlying problem in almost
+all static analyses for Android app security, such as finding information
+leaks, inferring ICC calls, identifying misuse of certain library functions, and
+others. Instead of addressing each of these problems using different specialized
+models and algorithms, it is advantageous and more elegant to pre-calculate ``all``
+object points-to information at once, and use this as a general framework for
+different types of further analysis.
+
+Thus, the core task of Amandroid’s analysis is aimed to build a precise
+inter-component  data flow graph (``IDFG``) of the app; the flow-sensitive and
+context-sensitive data flow analysis to calculate object points-to information
+is done ``at the same time`` with building inter-procedural control flow graph
+(``ICFG``). This is because in order for one to precisely know the implementation
+method of a virtual method invocation, one needs to know the receiver object's
+dynamic type; conversely, flow-sensitive data flow analysis requires one to know
+how the program control flows. Thus, there is a mutual dependency between the
+two analyses. 
+
+Such integrated control and data flow analyses approach has been demonstrated to
+be both practical and effective for even analyzing temporal properties of
+{``concurrent``} Java programs including the standard Java library
+codebase~\cite{dwyer2006evaluating}. However, \cite{dwyer2006evaluating} does
+not keep track of method calling context (typically termed \emph{monovariant}
+calling context analysis or 0-calling context~\cite{nielson1999principles}).
+We generalize the approach to precisely track the last ``k`` calling contexts
+(\emph{polyvariant}~\cite{nielson1999principles}, \aka ``k``-limiting where ``k``
+is user-configurable and the additional calling context beyond $k$ is monovariant).
+
+Amandroid follows the classical static analysis
+approach~\cite{nielson1999principles} customized to address the number of
+aforementioned challenges in analyzing Android apps.
+It computes points-to facts for each statement.
+
+There are two sets of facts associated with each statement: the set of facts
+entering into a statement ``s`` is called the ``entry set`` of ``s`` (or just
+``Entry(s)``); the set of facts exiting a statement ``s`` is called the 
+``exit set` of ``s`` (or just ``Exit(s)``).
+Statement ``s`` may change ``Entry(s)`` by killing stale facts (``Kill(s)`) and/or
+generating new facts (``Gen(s)``).
+The ``Gen`` and ``Kill`` sets can be calculated using flow functions that are
+based on ``s``’ semantics. In general, the flow equations have the 
+following forms.
+
+Entry(s) = (Exit(s) \setminus Kill(s)) \cup Gen(s)
+
+Below we introduce the notations in ``IDFG`` and
+use the example in Section~\ref{sec:motivation} to explain its semantics.
+Figure~\ref{fig:appIdfg} is the resulting 
+``IDFG`` of the exmaple app, using ``DataGrabber`` as the entry point.
+
+.. figure:: _static/idfg.png
+   :height: 300px
+   :width: 800 px
+   :alt: alternate text
+   :align: center
+
+   Figure: An excerpt from the ``IDFG`` of the app ``sensitive-sms``.
+
+
+
+
 .. _DDG:
 
 Data Dependence Graph (DDG)
 ====================
 
-Using Amandroid for Security Analyses
+The data dependence graph ``DDG`` is derived from the ``IDFG``. The ``DDG``
+reflects how instance and variable definitions flow through the
+program. With the help of ``DDG``, we can argue which part(s) of the program a
+particular program-point depends on with respect to these two types of flows. As
+a matter of fact, the ``DDG`` is a directional graph like the ``ICFG``. 
+
+Since object flow along ICC edges is already captured in ``IDFG``, the constructed ``DDG``
+automatically captures data dependencies across component boundaries.
+As an example, in Figure~\ref{fig:appIdfg}, the 
+\emph{sendTextMessage(..., s3)} in \emph{Leaker} uses \Var{s3}
+while the $\EN$ of this statement has a fact \Fact{s3, 5} which implies that 
+\KW{Instance 5} is used in this statement. 
+So, there is an object dependence edge from the corresponding $\CallNode$ (\textit{L28}) in
+the \emph{Leaker} component to the
+creation site (\textit{L5}) in the \emph{DataGrabber} component.
