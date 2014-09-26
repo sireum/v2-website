@@ -10,6 +10,7 @@ Schedule
 
 ----
 
+STRESS registration starts at 14:00 on October 3, 2014.
 Below is the schedule for STRESS 2014 :ref:`lectures`:
 
 .. list-table::
@@ -20,7 +21,7 @@ Below is the schedule for STRESS 2014 :ref:`lectures`:
      - Morning (08:00-11:30)
      - Afternoon (14:30-17:30)
    * - October 3
-     - Registration 
+     - 
      - :ref:`kiasan` (Introduction to Symbolic Execution)
    * - October 4
      - :ref:`spark2014`

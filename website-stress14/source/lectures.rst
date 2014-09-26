@@ -147,8 +147,8 @@ generated from the very same specification.
 
 .. _smtkind:
 
-|SMT-LIB| and |Kind|
-====================
+Introduction to SMT and SMT-based Model Checking
+================================================
 
 Lecturer: |Cesare Tinelli| (University of Iowa)
 -----------------------------------------------
