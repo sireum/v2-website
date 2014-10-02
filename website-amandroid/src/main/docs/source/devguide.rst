@@ -238,7 +238,7 @@ Below is an example of how we do it for ``password leakage detection`` plugin wi
 
 	socket.runWithDDA(ssm, false, true) // The second param indicates whether to process only public components while the third param is to on/off parallel processing
 
-For the sake of concreteness, let us now present a code snippet from an example plugin. Below is an excerpt of the ``main`` method of the ``password leakage detection`` plugin.
+For the sake of concreteness, let us now present a more complete code snippet from an example plugin. Below is an excerpt of the ``main`` method of the ``password leakage detection`` plugin.
 Note that this contains many of the aforementioned pieces of code.
 
 
