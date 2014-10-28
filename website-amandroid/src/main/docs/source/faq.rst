@@ -1,8 +1,4 @@
-F&Q
+FAQ
 ########
 
-1. xxx
-	yyy
-
-2. zzz
-	xyz
+To be the first one.

@@ -64,11 +64,11 @@ Amandroid is implemented on top of `Sireum <https://github.com/sireum>`__, so fo
 
 ``Sireum Core``: https://github.com/fgwei/core
 
-``Sireum Jawa``: https://github.com/santoslab/sireum-jawa
+``Sireum Jawa``: https://github.com/sireum/jawa
 
 Amandroid’s repository:
 
-``Sireum Amandroid``: https://github.com/santoslab/sireum-amandroid
+``Sireum Amandroid``: https://github.com/sireum/amandroid
 
 Clone all the required repositories into your workspace using Eclipse:
 
@@ -87,7 +87,8 @@ right-click on each repository -> select ``Import Projects …`` -> check ``Impo
 Optain Amandroid Stash
 ======================
 
-1.Download Amandroid Stash from xxx, 
+1.Download `Amandroid Stash <http://people.cis.ksu.edu/~fgwei/resources/stash/AmandroidStash.zip>`__, and extract it in, e.g., ``/path``.
+This will create a Amandroid directory in ``/path/AmandroidStash``.
 
 2.Setup environment variable:
 
@@ -95,7 +96,7 @@ Optain Amandroid Stash
 	
 .. code-block:: bash
 
-	$ export SIREUM_HOME=/path/AmandroidStash
+	$ export AMANDROID_HOME=/path/AmandroidStash
 
 .. note:: Do not change the directory structure with in Amandoid Stash.
 

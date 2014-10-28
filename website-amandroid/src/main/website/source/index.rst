@@ -54,7 +54,6 @@
              <h3 class="panel-title">About</h3>
            </div>
            <div class="panel-body">
-
 Amandroid is a static analysis framework for Android apps.
 
 The Android platform is immensely popular. However, malicious or vulnerable applications have been reported to cause several security problems. Currently there is no effective method that a market operator can use to vet apps entering a market (e.g., Google Play). 

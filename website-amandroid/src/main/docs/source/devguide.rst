@@ -209,7 +209,7 @@ Below is an example of how we create an ``AmandroidSocketListener`` for ``passwo
 
 We envision two types of data flow analyses you might be interested in. Some details with examples are as follows. Hopefully, they will help you in designing your new plugin.
 
-(i) Analyses which require DDG results
+Analyses which require DDG results
 ***************************************
 Examples of this type of analysis are (a) ``data leak detection``: You need to discover a taint path from a source to a sink.
 And (b) ``intent injection detection``: You need to find a taint path from an incoming intent to a sink. 
@@ -282,7 +282,7 @@ At the end of the analysis, the results are collected from the ``AppCenter``. Fo
 	... // report or store your analysis results as you want
 	}
 
-(ii) Analyses which do not require DDG results
+Analyses which do not require DDG results
 ***********************************************
 An example of this type of analysis is "crypto-API misuse detection". 
 The misuse is detected via inspecting the parameter values of such an API, 

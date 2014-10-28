@@ -1,6 +1,7 @@
 Software
 ########
 
+----------------------
 
 Links
 *****
@@ -19,8 +20,22 @@ Links
 Getting Started
 ****
 
+This section will help you to start with using Amandroid.
+
 .. toctree::
 	:maxdepth: 1
+
+Start with Source Code
+======================
+
+Amandroid is open sourced under Eclipse Public License v1.0 (EPL).
+
+Follow instructions in http://amandroid.sireum.org/docs/tutorial.html to learn how to start using and contributing to Amandroid.
+
+Start with Executable
+======================
+
+Amandroid has a `Sireum <http://www.sireum.org/>`__ based Command Line Interface (CLI), following instruction will help you to setup the environment of using such CLI.
 
 Downloading Amandroid
 --------------------

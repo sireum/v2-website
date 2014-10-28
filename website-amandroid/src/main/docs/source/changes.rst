@@ -1,4 +1,4 @@
 Changes
 ########
 
-released Amandroid Beta v1.
+released Amandroid Beta v0.1.

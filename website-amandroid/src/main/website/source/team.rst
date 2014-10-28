@@ -37,7 +37,7 @@ Team
            <div class="panel-body">
              <table>
                <tr>
-                 <td><img src="_static/placeholder.png" height="140px"/></td>
+                 <td><img src="_static/venkatesh.png" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
                    <em>Visiting Assistant Professor</em><br/>

@@ -180,7 +180,7 @@ html_theme_options = {
 html_title = "Sireum Amandroid"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = "Robby's Homepage"
+html_short_title = "Amandroid"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

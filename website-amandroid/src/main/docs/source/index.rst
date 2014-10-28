@@ -7,17 +7,16 @@ Welcome to Sireum Amandroid’s documentation!
 =================================================
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
    intro
    tutorial
    approach
    devguide
-   examples
 
    faq
    glossary
-   changes
 
 
 
@@ -25,6 +24,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
