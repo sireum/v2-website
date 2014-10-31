@@ -15,6 +15,6 @@ We have found several examples of password leakage. We observe a few interesting
    Detected **Problem**: the password is reaching a Network API over HTTP channel.
 3. App **name**: om.snappii.angel.investing.news.v10; **Source**: Google Play
 
-   Detected **Problem**: the password is saved in SharedPreference. 
+   Detected **Problem**: the password is saved in SharedPreference.  :doc:`(More Details)<problemDetails/pwLeakageDetails/app3Details>`
 
 
