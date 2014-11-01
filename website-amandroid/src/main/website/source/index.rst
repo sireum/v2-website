@@ -7,6 +7,8 @@
    service
    team
 
+Amandroid
+#################
 
 .. raw:: html
 
@@ -49,7 +51,7 @@
      
      <div class="row">
        <div class="col-md-8">
-         <div class="panel panel-default" style="height:700px">
+         <div class="panel panel-default" style="height:100%">
            <div class="panel-heading">
              <h3 class="panel-title">About</h3>
            </div>
@@ -84,7 +86,7 @@ the views of the previously mentioned institutions.
          </div>
        </div>
        <div class="col-md-4">
-         <div class="panel panel-default" style="height:375px">
+         <div class="panel panel-default" style="height:100%">
            <div class="panel-heading">
              <h3 class="panel-title">Contact</h3>
            </div>

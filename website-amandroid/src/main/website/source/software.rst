@@ -69,8 +69,8 @@ Running Amandroid
 
 	.. code-block:: bash
 
-		$ ./sireum amandroid decompile /path/some.apk /outputPath
+		$ sireum amandroid decompile /path/some.apk /outputPath
 
 	.. code-block:: bash
 
-		$ ./sireum amandroid taintAnalysis -m 12 -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+		$ sireum amandroid taintAnalysis -m 12 -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
