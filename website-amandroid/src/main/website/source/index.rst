@@ -99,7 +99,7 @@ the views of the previously mentioned institutions.
 | `Manhattan <http://www.ci.manhattan.ks.us/>`__, `KS <http://www.kansas.gov/>`__, 66506
 | Phone: (785) 532-6350
 | Fax: (785) 532-7353
-| Email: amandroid@arguslab.org
+| Email: amandroid@sireum.org 
 
 .. raw:: html
 
