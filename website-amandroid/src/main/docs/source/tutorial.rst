@@ -15,34 +15,9 @@ Setup Sireum CLI
 
 Sireum CLI setup is pretty strait-forward, following steps need to be followed: 
 
-1.Download `Sireum <http://www.sireum.org/software.html#downloading-sireum>`__, and extract it in ``/path``. (Note that the path should not contain whitespaces.) This will create a Sireum directory in ``/path/Sireum``.
+1.Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
 
-2.Setup following environment variables:
-
-``SIREUM_HOME``: points to Sireum's main directory. e.g.,
-	
-.. code-block:: bash
-
-	$ export SIREUM_HOME=/path/AmandroidCli
-
-Adding the absolute path of ``SIREUM_HOME`` to the beginning of your ``PATH`` environment variable.
-
-``SIREUM_UPDATE`` : points to Sireum update site.
-
-.. code-block:: bash
-
-	$ export SIREUM_UPDATE=http://update.sireum.org/dev/latest
-
-	
-3.Initialize Sireum CLI:
-
-.. code-block:: bash
-
-	$ sireum
-
-If this is your first time running Sireum, `Sireum Distro <http://www.sireum.org/software.html#sireum-distro>`__ will automatically download the appropriate files for Sireum CLI and store them in ``SIREUM_HOME``.
-
-4.Launch Eclipse:
+2.Launch Eclipse:
 
 .. code-block:: bash
 

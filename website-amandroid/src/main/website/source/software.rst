@@ -44,16 +44,6 @@ Downloading Sireum
 	Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
 
 
-Install Amandroid CLI
-------------------------
-
-	To install Amandroid CLI, in a terminal command prompt, type:
-
-	.. code-block:: bash
-
-		$ sireum install “Sireum Amandroid Cli”
-
-
 Running Amandroid
 -------------------
 
