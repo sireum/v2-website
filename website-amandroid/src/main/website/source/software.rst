@@ -38,13 +38,13 @@ Start with Executable
 
 Amandroid is a feature in `Sireum <http://www.sireum.org/>`__ Command Line Interface (CLI), following instruction will help you to setup.
 
-Downloading Sireum
+Download Sireum
 --------------------
 
 	Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
 
 
-Running Amandroid
+Run Amandroid
 -------------------
 
 	To run Amandroid, in a terminal command prompt, type:
