@@ -6,10 +6,15 @@ Projects
 
 ----
 
-We are currently developing Sireum v2. Below are some projects 
-done in Sireum v1.
+We are currently developing Sireum v2.
+`Sireum Amandroid <http://amandroid.sireum.org>`__ is the first publicly
+available major toolset developed on top of Sireum v2. 
+
+Below are some projects done in Sireum v1.
 
 ----
+
+.. _subsec-bakar-project:
 
 Sireum Bakar
 ============
