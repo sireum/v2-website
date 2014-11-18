@@ -4,18 +4,18 @@ Features
 ########
 
 
-Features for Analyzing Android Apps
-***********************************
+Features for Sireum Users
+*************************
 
 .. _subsec-amandroid-feature:
+
+Sireum Amandroid
+****************
 
 Sireum Amandroid_ is a toolset for security vetting of Android apps. Please visit
 the Amandroid_ website for more information.
 
 .. _Amandroid: http://amandroid.sireum.org/
-
-Features for Sireum Users
-*************************
 
 .. _subsec-bakar-feature:
 
