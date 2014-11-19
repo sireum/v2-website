@@ -33,6 +33,10 @@ Amandroid is open sourced under Eclipse Public License v1.0 (EPL).
 
 Follow instructions in http://amandroid.sireum.org/docs/tutorial.html to learn how to start using and contributing to Amandroid.
 
+.. sidebar:: Issue Tracker
+
+	If you encounter any issue or have any comment, please post it on: https://github.com/sireum/amandroid/issues. We will do our best to reply.
+
 Start with Executable
 ======================
 
@@ -68,7 +72,3 @@ Run Amandroid
 
 -----------------
 
-Issue Tracker
-=================
-
-If you encounter any issue when using Amandroid or you have any requirement, please post on: https://github.com/sireum/amandroid/issues. We will do our best to reply.
