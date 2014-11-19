@@ -9,7 +9,7 @@ Links
 .. toctree::
 	:maxdepth: 1
 
-*  license
+* `Sireum <http://www.sireum.org/>`__
    
 * `Repositories <http://github.com/sireum>`__
    
@@ -64,3 +64,11 @@ Run Amandroid
 	.. code-block:: bash
 
 		$ sireum amandroid taintAnalysis -m 12 -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+
+
+-----------------
+
+Issue Tracker
+=================
+
+If you encounter any issue when using Amandroid or you have any requirement, please post on: https://github.com/sireum/amandroid/issues. We will do our best to reply.
