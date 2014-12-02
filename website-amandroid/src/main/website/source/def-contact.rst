@@ -10,3 +10,4 @@
 
 .. |Jordan DeLoach| replace:: `Jordan DeLoach <http://jordandeloach.com>`__
 
+.. |Yuping Li| replace:: `Yuping Li <http://people.cis.ksu.edu/~ypli>`__
