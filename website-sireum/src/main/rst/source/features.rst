@@ -7,18 +7,27 @@ Features
 Features for Sireum Users
 *************************
 
+.. _subsec-amandroid-feature:
+
+Sireum Amandroid
+================
+
+Sireum Amandroid_ is a toolset for security vetting of Android apps. Please visit
+the Amandroid_ website for more information.
+
+.. _Amandroid: http://amandroid.sireum.org/
+
 .. _subsec-bakar-feature:
 
 Sireum Bakar
 ============
 
-Bakar_ is a toolset for analyzing Spark Ada programs 
+:ref:`subsec-bakar-project` is a toolset for analyzing Spark Ada programs 
 (Bakar means "spark" in Indonesian).
 Sireum Bakar is integrated with the Eclipse_ platform. 
 (A version for AdaCore's GNAT Programming Studio -- GPS_), is currently under 
 development.)
 
-.. _Bakar: http://sireum.org/bakar/
 .. _Eclipse: http://eclipse.org
 .. _GPS: http://www.adacore.com/gnatpro/toolsuite/gps
 

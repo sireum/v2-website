@@ -9,7 +9,7 @@ Links
 .. toctree::
 	:maxdepth: 1
 
-*  license
+* `Sireum <http://www.sireum.org/>`__
    
 * `Repositories <http://github.com/sireum>`__
    
@@ -32,6 +32,10 @@ Start with Source Code
 Amandroid is open sourced under Eclipse Public License v1.0 (EPL).
 
 Follow instructions in http://amandroid.sireum.org/docs/tutorial.html to learn how to start using and contributing to Amandroid.
+
+.. sidebar:: Issue Tracker
+
+	If you encounter any issue or have any comment, please post it on: https://github.com/sireum/amandroid/issues. We will do our best to reply.
 
 Start with Executable
 ======================
@@ -64,3 +68,7 @@ Run Amandroid
 	.. code-block:: bash
 
 		$ sireum amandroid taintAnalysis -m 12 -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+
+
+-----------------
+

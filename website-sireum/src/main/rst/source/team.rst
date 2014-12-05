@@ -159,15 +159,14 @@ Team
            <div class="panel-body">
              <table>
                <tr>
-                 <td><img src="_static/jj.jpg" height="140px"/></td>
+                 <td><img src="_static/placeholder.png" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <strong>Jakub Jedryszek</strong> <br/>
-                   <em>M.S. Student</em><br/>
+                   <strong>Jacob H. Ehrlich</strong> <br/>
+                   <em>Undergraduate Student</em><br/>
                    <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
-                   <a href="http://people.cis.ksu.edu/~jjedrys">Website</a>
                  </td>
                </tr>
              </table>             

@@ -33,6 +33,15 @@ Checking Out the Source of Amandroid
 
 Amandroid is implemented on top of `Sireum <https://github.com/sireum>`__, so following Sireum repositories are needed to be able to run Amandroid:
 
+.. sidebar:: Issue Tracker
+
+	If you encounter any issue or have any comment, please post it on: 
+
+	https://github.com/sireum/amandroid/issues. 
+
+	We will do our best to reply.
+
+
 ``Sireum Prelude``: https://github.com/sireum/prelude
 
 ``Sireum Parser``: https://github.com/sireum/parser
@@ -44,6 +53,7 @@ Amandroid is implemented on top of `Sireum <https://github.com/sireum>`__, so fo
 Amandroid’s repository:
 
 ``Sireum Amandroid``: https://github.com/sireum/amandroid
+
 
 Clone all the required repositories into your workspace using Eclipse:
 
@@ -59,6 +69,7 @@ right-click on each repository -> select ``Import Projects …`` -> check ``Impo
 
 5.Wait for the projects to be imported, and the indexing to finish.
 
+
 Optain Amandroid Stash
 ======================
 
@@ -73,7 +84,7 @@ This will create a Amandroid directory in ``/path/AmandroidStash``.
 
 	$ export AMANDROID_HOME=/path/AmandroidStash
 
-.. note:: Do not change the directory structure with in Amandoid Stash.
+.. warning:: Do not change the directory structure with in Amandoid Stash.
 
 TroubleShooting
 ==================
