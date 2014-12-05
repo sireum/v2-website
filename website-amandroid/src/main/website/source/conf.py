@@ -105,7 +105,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
 # Path should be relative to the ``_static`` files directory.
-#html_logo = "sireum-logo.png"
+#html_logo = "amandroid-logo.png"
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
@@ -184,7 +184,7 @@ html_short_title = "Amandroid"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+#html_logo = "amandroid-logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32

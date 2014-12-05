@@ -66,22 +66,12 @@ Our approach shows that a comprehensive (tracking all objects) static analysis m
 
 Since Amandroid directly handles Inter-component control and data flows, it can be used to address security problems that result from interactions among multiple components from either the same or different apps. Amandroid analysis is sound in that it can provide assurance of the absence of the specified security problems in an app with well-specified and reasonable assumptions on the Android runtime and its library.
 
-On top of Amandroid we performed certain specific security analyses, for instance, a) user password flow tracking, b) intent injection detection, and c) crypto API misuse checking. We apply those analyses on hundreds of apps collected from Google Play's popular apps and a third-party security company, and the results show that it is capable of finding real security issues and efficient enough in terms of analysis time. 
-
-Acknowledgement: The development of Amandroid is supported in part by the US Air Force Office
-of Scientific Research (AFOSR) grant no. FA9550-09-0138 and 
-by the U.S. National Science  Foundation (NSF)
-under grant no. 
-`0954138 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0954138>`__ and 
-`1018703 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=1018703>`__.
-It was also supported by the NSF CAREER
-award `0644288 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0644288>`__.
-Any opinions, findings, conclusions, or recommendations expressed in
-this material are those of the authors and do not necessarily reflect
-the views of the previously mentioned institutions.
+On top of Amandroid we performed certain specific security analyses, for instance, a) user password flow tracking, b) intent injection detection, and c) crypto API misuse checking. We apply those analyses on hundreds of apps collected from Google Play's popular apps and a third-party security company, and the results show that it is capable of finding real security issues and efficient enough in terms of analysis time.
 
 .. raw:: html
 
+             <br>
+             <br>
            </div>
          </div>
        </div>
@@ -103,6 +93,29 @@ the views of the previously mentioned institutions.
 
 .. raw:: html
 
+           </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="panel panel-default" style="height:100%">
+           <div class="panel-heading">
+             <h3 class="panel-title">Acknowledgement</h3>
+           </div>
+           <div class="panel-body">
+
+The development of Amandroid is supported in part by the US Air Force Office
+of Scientific Research (AFOSR) grant no. FA9550-09-0138 and 
+by the U.S. National Science  Foundation (NSF)
+under grant no. 
+`0954138 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0954138>`__ and 
+`1018703 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=1018703>`__.
+It was also supported by the NSF CAREER
+award `0644288 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0644288>`__.
+Any opinions, findings, conclusions, or recommendations expressed in
+this material are those of the authors and do not necessarily reflect
+the views of the previously mentioned institutions.
+
+.. raw:: html
            </div>
          </div>
        </div>
