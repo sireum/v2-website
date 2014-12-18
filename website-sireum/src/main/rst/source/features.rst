@@ -46,10 +46,27 @@ Eclipse and Associated Plugins for Sireum Development
 
 Sireum Distro manages the recommended Eclipse_ version and 
 associated plugins for developing Sireum. 
+
+We recommend using a *64-bit* Sireum distribution/platform as one needs
+around 3GB heap memory to compile Sireum; also, we recommend using Sireum 
+*development* version in order to use up-to-date plugins/tools.
+
+To switch from *stable* to *development*:
+
+* In OS X or Linux::
+
+      export SIREUM_UPDATE=http://update.sireum.org/dev/latest/
+      sireum update
+      
+* In Windows::
+
+      set SIREUM_UPDATE=http://update.sireum.org/dev/latest/
+      sireum update
+
 To run Sireum development tools, type the following in a terminal
 (add ``-h`` for help)::
 
-    sireum launch sireumdev
+    sireum launch sireumdev -j "-Xms512m,-Xmx4096m"
 
 It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/dsl/``) with associated 
 plugins necessay for Sireum development and ANTLRWorks 
