@@ -88,11 +88,10 @@ you can download just the Sireum script:
   + for Mac and Linux: `sireum <http://update.sireum.org/dev/latest/sireum>`__
   + for Windows: `sireum.bat <http://update.sireum.org/dev/latest/sireum.bat>`__
 
-Download the Sireum script appropriate for your platform (gunzip the Sireum 
-script if downloading the compressed version), and store it in a directory such 
-as ``~/Applications/Sireum`` (or in Windows: ``C:\Sireum``). (Note that the path 
-should not contain whitespaces, and in Windows, it is best to put it in a root 
-drive because of 
+Download the Sireum script appropriate for your platform, and store it in a
+directory such as ``~/Applications/Sireum`` (or in Windows: ``C:\Sireum``).
+(Note that the path should not contain whitespaces, and in Windows, it is best
+to put it in a root drive because of 
 `Windows' file path limit of 260 characters <http://msdn.microsoft.com/en-us/library/aa365247(VS.85).aspx#maxpath>`_.) 
 Let's call this directory ``SIREUM_HOME``. The rest of the instructions
 below assume the command ``sireum`` to refer to ``SIREUM_HOME/sireum``

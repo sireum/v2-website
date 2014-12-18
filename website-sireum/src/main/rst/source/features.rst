@@ -24,12 +24,10 @@ Sireum Bakar
 
 :ref:`subsec-bakar-project` is a toolset for analyzing Spark Ada programs 
 (Bakar means "spark" in Indonesian).
-Sireum Bakar is integrated with the Eclipse_ platform. 
-(A version for AdaCore's GNAT Programming Studio -- GPS_), is currently under 
-development.)
+Sireum Bakar (v1) is integrated with the Eclipse_ platform;
+a new version (v2) for Spark 2014 is currently under development.
 
 .. _Eclipse: http://eclipse.org
-.. _GPS: http://www.adacore.com/gnatpro/toolsuite/gps
 
 To run Sireum Bakar, type the following in a terminal (add ``-h`` for help)::
 
