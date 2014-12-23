@@ -102,8 +102,8 @@ To install the compiler tools, type the following in a terminal
     sireum launch eclipse
 
 It installs Eclipse_ (in ``SIREUM_HOME/apps/eclipse/dsl/``) 
-with associated plugins necessay for the compiler course and ANTLRWorks 
-(in ``SIREUM_HOME/apps/antlr/works``), and then launch Eclipse.
+with associated plugins necessay for the compiler course, and then launch
+Eclipse.
 Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
 `Java Installed JREs preference page <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
 and make it the default. In addition, set Eclipse's `Java Compiler compliance level <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fbuildpath%2Fref-preferences-user-libraries.htm>`_ to 1.7.
