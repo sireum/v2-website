@@ -231,6 +231,29 @@ Collaborators
            </div>
          </div>
        </div>
+       <div class="col-md-4">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h3 class="panel-title">Research Collaborator</h3>
+           </div>
+           <div class="panel-body">
+             <table>
+               <tr>
+                 <td><img src="_static/rvprasad.png" height="140px"/></td>
+                 <td>&nbsp;&nbsp;&nbsp;</td>
+                 <td valign="top">
+                   <strong>Venkatesh-Prasad Ranganath</strong> <br/>
+                   <em>Visiting Assistant Professor</em><br/>
+                   <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
+                   <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
+                   <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
+                   <a href="http://people.cis.ksu.edu/~rvprasad">Website</a>
+                 </td>
+               </tr>
+             </table>             
+           </div>
+         </div>
+       </div>
      </div>
    </div>
      
