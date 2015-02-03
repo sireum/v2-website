@@ -95,23 +95,6 @@ Compilers -- CIS 706: Translator Design I
 =========================================
 
 See the `compiler course website <http://compilers.santoslab.org>`_ 
-for information regarding the course.
-To install the compiler tools, type the following in a terminal 
-(add ``-h`` for help)::
-
-    sireum launch eclipse
-
-It installs Eclipse_ (in ``SIREUM_HOME/apps/eclipse/dsl/``) 
-with associated plugins necessay for the compiler course, and then launch
-Eclipse.
-Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
-`Java Installed JREs preference page <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
-and make it the default. In addition, set Eclipse's `Java Compiler compliance level <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fbuildpath%2Fref-preferences-user-libraries.htm>`_ to 1.7.
-
-
-ANTLRWorks
-==========
-
-To run ANTLRWorks, type the following in a terminal::
-
-    sireum launch antlrworks
+for information regarding the course, or see the `compiler example projects
+repository <https://github.com/ksu-cis-706/compiler>`__ 
+for instructions on setting up your development environment.
