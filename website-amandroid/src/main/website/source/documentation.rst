@@ -6,11 +6,11 @@ Documentation
 ----------------------
 
 Documentations
-******
+**************
 
-`Amandroid Documentation <http://amandroid.sireum.org/docs/>`__
+`Amandroid Documentation <docs/>`__
 
-`API Doc <http://amandroid.sireum.org/api/>`__
+`API Doc <api/>`__
 
 ----------------------
 
