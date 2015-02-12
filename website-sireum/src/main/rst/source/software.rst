@@ -43,17 +43,17 @@ Managed Java and Scala
 The following Sireum distributions include Java (JDK) 8u31 and Scala 2.11.5:
 
 * **Stable**: 
-  `mac64 <http://sireum.org/artifact/sireum-stable-mac64.tar.gz>`__, 
-  `linux64 <http://sireum.org/artifact/sireum-stable-linux64.tar.gz>`__, 
-  `linux32 <http://sireum.org/artifact/sireum-stable-linux32.tar.gz>`__, 
-  `win64 <http://sireum.org/artifact/sireum-stable-win64.zip>`__, 
-  `win32 <http://sireum.org/artifact/sireum-stable-win32.zip>`__
+  `mac64 <http://files.sireum.org/sireum-stable-mac64.tar.gz>`__, 
+  `linux64 <http://files.sireum.org/sireum-stable-linux64.tar.gz>`__, 
+  `linux32 <http://files.sireum.org/sireum-stable-linux32.tar.gz>`__, 
+  `win64 <http://files.sireum.org/sireum-stable-win64.zip>`__, 
+  `win32 <http://files.sireum.org/sireum-stable-win32.zip>`__
 * **Development**: 
-  `mac64 <http://sireum.org/artifact/sireum-dev-mac64.tar.gz>`__, 
-  `linux64 <http://sireum.org/artifact/sireum-dev-linux64.tar.gz>`__, 
-  `linux32 <http://sireum.org/artifact/sireum-dev-linux32.tar.gz>`__, 
-  `win64 <http://sireum.org/artifact/sireum-dev-win64.zip>`__, 
-  `win32 <http://sireum.org/artifact/sireum-dev-win32.zip>`__
+  `mac64 <http://files.sireum.org/sireum-dev-mac64.tar.gz>`__, 
+  `linux64 <http://files.sireum.org/sireum-dev-linux64.tar.gz>`__, 
+  `linux32 <http://files.sireum.org/sireum-dev-linux32.tar.gz>`__, 
+  `win64 <http://files.sireum.org/sireum-dev-win64.zip>`__, 
+  `win32 <http://files.sireum.org/sireum-dev-win32.zip>`__
 
 Download the distribution appropriate for your platform and uncompress it in, 
 e.g., ``~/Applications`` (or in Windows: ``C:\``). (Note that the path should not
