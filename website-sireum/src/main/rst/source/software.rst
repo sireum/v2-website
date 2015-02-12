@@ -27,12 +27,12 @@ Getting Started
 
 Demo Videos:
 
-* `Installing Sireum (and Sireum Bakar) <http://sireum.org/files/media/sireum-bakar-installation.mp4>`__
+* `Installing Sireum (and Sireum Bakar) <http://files.sireum.org/media/sireum-bakar-installation.mp4>`__
 
-* `Updating Sireum <http://sireum.org/files/media/sireum-update.mp4>`__
+* `Updating Sireum <http://files.sireum.org/media/sireum-update.mp4>`__
 
-* `Sireum Bakar Kiasan <http://sireum.org/files/media/bakarv1/sireum-bakar-kiasan.mp4>`__
-  (`examples <http://sireum.org/files/media/bakarv1/examples/bakar-examples.zip>`__)
+* `Sireum Bakar Kiasan <http://files.sireum.org/media/bakarv1/sireum-bakar-kiasan.mp4>`__
+  (`examples <http://files.sireum.org/media/bakarv1/examples/bakar-examples.zip>`__)
 
 Downloading Sireum
 ==================
