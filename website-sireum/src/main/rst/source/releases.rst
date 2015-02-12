@@ -13,17 +13,19 @@ To use a particular release, set the ``SIREUM_UPDATE``
 environment variable to the corresponding release version URL listed below
 before running Sireum update.
 
-Stable Releases
-===============
-
 .. raw:: html
 
-   <iframe src="http://update.sireum.org/stable/listing.html" width="100%" height="480" frameborder="0"></iframe>
-
-
-Development Releases
-====================
-
-.. raw:: html
-
-   <iframe src="http://update.sireum.org/dev/listing.html" width="100%" height="400" frameborder="0"></iframe>
+   <table width="100%">
+   <tr>
+   <td width="50%">
+   <div class="section" id="stable-releases">
+   <h3>Stable Releases<a class="headerlink" href="#stable-releases" title="Permalink to this headline">¶</a></h3>
+   <iframe src="http://update.sireum.org/stable/listing.html" width="100%" height="480" frameborder="0"></iframe></div>
+   </td>
+   <td width="50%">
+   <div class="section" id="development-releases">
+   <h3>Development Releases<a class="headerlink" href="#development-releases" title="Permalink to this headline">¶</a></h3>
+   <iframe src="http://update.sireum.org/dev/listing.html" width="100%" height="480" frameborder="0"></iframe>
+   </td>
+   </tr>
+   </table>
