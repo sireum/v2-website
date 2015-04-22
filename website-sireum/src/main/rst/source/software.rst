@@ -37,11 +37,6 @@ Demo Videos:
 Downloading Sireum
 ==================
 
-Managed Java and Scala
-----------------------
-
-The following Sireum distributions include Java (JDK) 8u31 and Scala 2.11.5:
-
 * **Stable**: 
   `mac64 <http://files.sireum.org/sireum-stable-mac64.tar.gz>`__, 
   `linux64 <http://files.sireum.org/sireum-stable-linux64.tar.gz>`__, 
@@ -65,39 +60,6 @@ below assume the command ``sireum`` to refer to ``SIREUM_HOME/sireum``
 (relative or absolute path); you can make sure that this is always the 
 case by, for example, adding the absolute path of ``SIREUM_HOME`` to the 
 **beginning** of your ``PATH`` environment variable. 
-
-
-Proceed to `Running Sireum`_.
-
-
-Unmanaged Java and Scala
-------------------------
-
-This is **not recommended** because your Java and Scala versions may differ to 
-what Sireum needs. Regardless, if you want to manage Java and Scala yourself 
-(Java and Scala should be in your ``PATH`` environment variable), 
-you can download just the Sireum script:
-
-* **Stable**
-
-  + for Mac and Linux: `sireum <http://update.sireum.org/sireum>`__
-  + for Windows: `sireum.bat <http://update.sireum.org/sireum.bat>`__
-
-* **Development**
-
-  + for Mac and Linux: `sireum <http://update.sireum.org/dev/latest/sireum>`__
-  + for Windows: `sireum.bat <http://update.sireum.org/dev/latest/sireum.bat>`__
-
-Download the Sireum script appropriate for your platform, and store it in a
-directory such as ``~/Applications/Sireum`` (or in Windows: ``C:\Sireum``).
-(Note that the path should not contain whitespaces, and in Windows, it is best
-to put it in a root drive because of 
-`Windows' file path limit of 260 characters <http://msdn.microsoft.com/en-us/library/aa365247(VS.85).aspx#maxpath>`_.) 
-Let's call this directory ``SIREUM_HOME``. The rest of the instructions
-below assume the command ``sireum`` to refer to ``SIREUM_HOME/sireum``
-(relative or absolute path); you can make sure that this is always the 
-case by, for example, adding the absolute path of ``SIREUM_HOME`` to the 
-**beginning** of your ``PATH`` environment variable.
 
 
 Running Sireum
@@ -135,18 +97,14 @@ To see other distro modes::
 
     sireum distro
 
-If you previously chose `Unmanaged Java and Scala`_, 
-you can move to `Managed Java and Scala`_ 
-by installing the ``Platform`` feature::
+To uninstall all features::
 
-    sireum install Platform
+    sireum uninstall all
 
-Conversely, you can uninstall the ``Platform`` feature to manage Java and Scala 
-yourself::
+.. note:: ``uninstall all`` will still keep Java and Scala that come with the
+   Sireum distribution.
 
-    sireum uninstall Platform
-
-.. note:: ``uninstall all`` will uninstall the ``Platform`` feature as well.
+Proceed to take a look at the available Sireum :ref:`sec-features`.  
 
 -----
 
