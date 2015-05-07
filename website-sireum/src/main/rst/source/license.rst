@@ -1,5 +1,9 @@
+.. _sec-license:
+
 License
 #######
+
+.. include:: software-header.rst
 
 License
 *******

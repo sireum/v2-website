@@ -1,7 +1,9 @@
+.. _sec-packages:
+
 Packages
 ########
 
-.. _sec-packages:
+.. include:: software-header.rst
 
 Packages
 ********

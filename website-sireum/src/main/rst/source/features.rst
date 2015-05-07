@@ -1,26 +1,34 @@
-.. _sec-features:
-
 Features
 ########
 
+.. include:: software-header.rst
+
+.. _sec-features:
+
+Features
+********
 
 Features for Sireum Users
-*************************
+=========================
 
 .. _subsec-amandroid-feature:
 
 Sireum Amandroid
-================
+----------------
 
-Sireum Amandroid_ is a toolset for security vetting of Android apps. Please visit
-the Amandroid_ website for more information.
+Sireum Amandroid_ is a toolset for security vetting of Android apps.
+Please visit the Amandroid_ website for more information.
 
+.. note::
+
+   Amandroid_ is available only on mac64 and linux64.
+   
 .. _Amandroid: http://amandroid.sireum.org/
 
 .. _subsec-bakar-feature:
 
 Sireum Bakar
-============
+------------
 
 :ref:`subsec-bakar-project` is a toolset for analyzing Spark Ada programs 
 (Bakar means "spark" in Indonesian).
@@ -37,47 +45,35 @@ It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/dsl/``)
 with Bakar Eclipse plugins (if they have not been installed previously), and 
 launch Eclipse.
 
+.. _subsec-sireum-ide-feature:
+
 Features for Sireum Developers
-******************************
+==============================
 
 
 Eclipse and Associated Plugins for Sireum Development
-=====================================================
+-----------------------------------------------------
 
 Sireum Distro manages the recommended Eclipse_ version and 
-associated plugins for developing Sireum. 
-
-We recommend using a *64-bit* Sireum distribution/platform as one needs
-around 3GB heap memory to compile Sireum; also, we recommend using Sireum 
-*development* version in order to use up-to-date plugins/tools.
-
-To switch from *stable* to *development*:
-
-* In OS X or Linux::
-
-      export SIREUM_UPDATE=http://update.sireum.org/dev/latest/
-      sireum update
-      
-* In Windows::
-
-      set SIREUM_UPDATE=http://update.sireum.org/dev/latest/
-      sireum update
+associated plugins for developing Sireum; all Sireum codebase require around 
+3GB heap to compile.
 
 To run Sireum development tools, type the following in a terminal
 (add ``-h`` for help)::
 
     sireum launch sireumdev -j "-Xms512m,-Xmx4096m"
 
-It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/dsl/``) with associated 
-plugins necessay for Sireum development and ANTLRWorks 
+It installs Eclipse (in ``SIREUM_HOME/apps/eclipse/dsl/``) with 
+associated plugins necessay for Sireum development and ANTLRWorks 
 (in ``SIREUM_HOME/apps/antlr/works``), and launch Eclipse.
 Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
 `Java Installed JREs preference page <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
-and make it the default. In addition, set Eclipse's `Java Compiler compliance level <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fbuildpath%2Fref-preferences-user-libraries.htm>`_ to 1.7.
+and make it the default. In addition, set Eclipse's
+`Java Compiler compliance level <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fbuildpath%2Fref-preferences-user-libraries.htm>`_ to 1.7.
    
 
 ANTLRWorks
-==========
+----------
 
 To run ANTLRWorks, type the following in a terminal::
 
@@ -85,14 +81,14 @@ To run ANTLRWorks, type the following in a terminal::
 
 
 Features for K-State CIS Students
-*********************************
+=================================
 
 Sireum Distro manages the recommended tools required by some course offerings at 
 K-State CIS.
 
 
 Compilers -- CIS 706: Translator Design I
-=========================================
+-----------------------------------------
 
 See the `compiler course website <http://compilers.santoslab.org>`_ 
 for information regarding the course, or see the `compiler example projects

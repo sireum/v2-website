@@ -61,24 +61,27 @@ such as data-flow framework, model checking, symbolic execution, abstract
 interpretation, and deductive reasoning techniques (e.g., using weakest
 precondition calculation). It can be used to build various kinds of
 software static analyzers for different kinds of properties.
-
 Sireum is based on previous extensive efforts in
 the  `Bogor <http://bogor.projects.cis.ksu.edu>`__ model checking framework, 
 the `Kiasan <http://www.computer.org/csdl/proceedings/ase/2006/2579/00/25790157-abs.html>`__ 
 symbolic execution framework, and 
 the `Indus <http://indus.projects.cis.ksu.edu>`__ static analysis framework, 
-the `Bandera <http://bandera.projects.cis.ksu.edu>`__ Java model checker at
-`SAnToS Laboratory <http://santoslab.org>`__. 
+the `Bandera <http://bandera.projects.cis.ksu.edu>`__ Java model checker. 
 In contrast to previous efforts, Sireum aims to provide
 a parallelizable, software description (e.g., programming language)
 agnostic implementation of the above frameworks in a unified platform.
 
-The development of Sireum is supported in part by the US Air Force Office
-of Scientific Research grant no. FA9550-09-0138.
-It was also supported by the US National Science Foundation (NSF) CAREER
+The development of Sireum was supported in part by the US Air Force Office
+of Scientific Research grant no. FA9550-09-0138,
+the US National Science Foundation (NSF) CAREER
 award `CCF-0644288 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0644288>`__, 
 Rockwell Collins Advanced Technology Center, and
 Lockheed Martin Advanced Technology Laboratories.
+
+Sireum source (private) and binary repositories
+are kindly provided by `GitHub <https://github.com/sireum>`__ and 
+`Bintray <https://bintray.com/sireum>`__, respectively.
+
 Any opinions, findings, conclusions, or recommendations expressed in
 this material are those of the authors and do not necessarily reflect
 the views of the previously mentioned institutions.
@@ -94,18 +97,14 @@ the views of the previously mentioned institutions.
              <h3 class="panel-title">Contact</h3>
            </div>
            <div class="panel-body">
-
-| `SAnToS Laboratory <http://santoslab.org>`__
-| `Computing and Information Sciences Department <http://www.cis.ksu.edu>`__
-| `Kansas State University <http://www.ksu.edu>`__
-| 234 `Nichols Hall <http://www.k-state.edu/maps/buildings/N/>`__
-| `Manhattan <http://www.ci.manhattan.ks.us/>`__, `KS <http://www.kansas.gov/>`__, 66506
-| Phone: (785) 532-6350
-| Fax: (785) 532-7353
-| Email: contact@santoslab.org
-
-.. raw:: html
-
+             <a href="http://santoslab.org">SAnToS Laboratory</a><br/> 
+             <a href="http://www.cis.ksu.edu">Computing and Information Sciences Department</a><br/>
+             <a href="http://www.ksu.edu">Kansas State University</a><br/>
+             234 <a href="http://www.k-state.edu/maps/buildings/N/">Nichols Hall</a><br/>
+             <a href="http://www.ci.manhattan.ks.us/">Manhattan</a>, <a href="http://www.kansas.gov/">KS</a> <a href="https://www.google.com/maps/place/Manhattan,+KS+66506">66506</a><br/>
+             Phone: (785) 532-6350<br/>
+             Fax: (785) 532-7353<br/>
+             Email: <a href="mailto:contact@santoslab.org">contact@santoslab.org</a>
            </div>
          </div>
        </div>
