@@ -2,7 +2,7 @@
    :widths: 10 10 10 10 10 10 10 10
    :header-rows: 0
    
-   * - `Software <software.html>`__ 〉
+   * - `Software <software.html>`__ 〉
      - `Features <features.html>`__
      - `Releases <releases.html>`__
      - `Packages <packages.html>`__

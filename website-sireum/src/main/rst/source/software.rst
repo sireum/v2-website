@@ -70,7 +70,7 @@ Shortcake
 
 Shortcake (a.k.a., ide) is a Sireum distribution that includes :ref:`strawberry`
 and the Sireum Integrated Development Environment
-(IDE; see :ref:`subsec-sireum-ide-feature`).
+(IDE, see :ref:`subsec-sireum-ide-feature`).
 
 * *stable* @ `Bintray <https://bintray.com/sireum/ide/stable/latest/view#files>`__
 * *dev (weekly)* @ `Bintray <https://bintray.com/sireum/ide/dev/weekly/view#files>`__
