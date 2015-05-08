@@ -25,8 +25,7 @@ Sireum Distributions
 
 There are 3 flavors of Sireum distributions: :ref:`vanilla`, :ref:`strawberry`,
 and :ref:`Shortcake`
-(most users would probably prefer using either :ref:`strawberry` or 
-:ref:`Shortcake`).
+(most users would probably prefer :ref:`strawberry` or :ref:`Shortcake`).
 Each flavor consists of *stable* and *dev* versions;
 the stable version is suitable for regular use and the dev version is intended
 for Sireum developers or for users trying out recent features/bug fixes not
