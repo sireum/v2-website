@@ -29,7 +29,7 @@ and :ref:`Shortcake`
 :ref:`Shortcake`).
 Each flavor consists of *stable* and *dev* versions;
 the stable version is suitable for regular use and the dev version is intended
-for Sireum developers or for users trying out recent features or bug fixes not
+for Sireum developers or for users trying out recent features/bug fixes not
 in stable yet.
 
 .. _vanilla:
