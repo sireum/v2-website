@@ -126,12 +126,12 @@ Sireum installations:
 * *stable* @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-stable/>`__
   (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/stable/Dockerfile>`__)::
   
-      docker run -i -t sireum/cli-stable:latest /bin/bash
+      docker run -it sireum/cli-stable:latest /bash
         
 * *dev (weekly)*: @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-dev/>`__
   (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/dev/Dockerfile>`__)::
    
-      docker run -i -t sireum/cli-dev:weekly /bin/bash
+      docker run -it sireum/cli-dev:weekly bash
 
 For the above containers, ``SIREUM_HOME`` is ``/opt/Sireum``.
 
