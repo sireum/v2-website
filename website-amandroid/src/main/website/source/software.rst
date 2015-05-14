@@ -20,6 +20,9 @@ Links
 Getting Started
 ******************
 
+.. warning:: Amandroid currently is not available for Windows.
+
+
 This section will help you to start with using Amandroid.
 
 .. toctree::
@@ -31,7 +34,7 @@ Start with Source Code
 
 Amandroid is open sourced under Eclipse Public License v1.0 (EPL).
 
-Follow instructions in http://amandroid.sireum.org/docs/tutorial.html to learn how to start using and contributing to Amandroid.
+Follow instructions in `Tutorial <http://amandroid.sireum.org/docs/tutorial.html>`__ to learn how to start using and contributing to Amandroid.
 
 .. sidebar:: Issue Tracker
 
@@ -45,7 +48,7 @@ Amandroid is a feature in `Sireum <http://www.sireum.org/>`__ Command Line Inter
 Download Sireum
 --------------------
 
-	Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
+	Follow instructions in `Sireum Strawberry <http://sireum.org/software.html#strawberry>`__ to download and setup Sireum-cli.
 
 
 Run Amandroid
