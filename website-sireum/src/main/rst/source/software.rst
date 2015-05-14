@@ -60,8 +60,23 @@ Strawberry (a.k.a., cli) is a Sireum distribution that includes :ref:`vanilla`
 and all publicly released Sireum (v2) tools and their Command-Line Interface
 (CLI) such as `Amandroid <http://amandroid.sireum.org>`__.
 
-* *stable* @ `Bintray <https://bintray.com/sireum/cli/stable/latest/view#files>`__
-* *dev (weekly)* @ `Bintray <https://bintray.com/sireum/cli/dev/weekly/view#files>`__
+* *stable* 
+
+  * @ `Bintray <https://bintray.com/sireum/cli/stable/latest/view#files>`__
+  
+  * @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-stable/>`__
+    (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/stable/Dockerfile>`__; ``SIREUM_HOME`` = ``/opt/Sireum``)::
+   
+        docker run -i -t sireum/cli-stable:latest /bin/bash
+        
+* *dev (weekly)*
+
+  * @ `Bintray <https://bintray.com/sireum/cli/dev/weekly/view#files>`__
+  
+  * @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-dev/>`__
+    (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/dev/Dockerfile>`__; ``SIREUM_HOME`` = ``/opt/Sireum``)::
+   
+        docker run -i -t sireum/cli-dev:weekly /bin/bash
 
 .. _shortcake:
     
