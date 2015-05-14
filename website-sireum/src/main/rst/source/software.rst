@@ -141,6 +141,19 @@ Then, Sireum CLI will print out the available modes that you can use.
 It is recommended to not modify files under ``SIREUM_HOME`` as the changes might
 be lost after an update.
 
+.. note::
+
+   Set the ``SCALA_OPTIONS`` environment variable to add options to Scala
+   before running Sireum, e.g., to pass Java options:
+   
+   * In Mac and Linux::
+   
+       export SCALA_OPTIONS="-J-Xms512m -J-Xmx4g -J-XX:+UseG1GC"
+       
+   * In Windows::
+
+       SET SCALA_OPTIONS=-J-Xms512m -J-Xmx4g -J-XX:+UseG1GC
+
 .. _subsec-distro:
 
 Sireum Distro
