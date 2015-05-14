@@ -4,7 +4,7 @@
         
     <li>
       
-      <a href="software.html#strawberry">Sireum Strawberry</a> <a href="https://registry.hub.docker.com/u/sireum/cli-stable/">stable</a> and <a href="https://registry.hub.docker.com/u/sireum/cli-dev/">dev</a> are now available at <a href="https://registry.hub.docker.com/repos/sireum/">Docker Hub</a>.
+      <a href="software.html#strawberry-docker">Sireum Strawberry</a> <a href="https://registry.hub.docker.com/u/sireum/cli-stable/">stable</a> and <a href="https://registry.hub.docker.com/u/sireum/cli-dev/">dev</a> are now available at <a href="https://registry.hub.docker.com/repos/sireum/">Docker Hub</a>.
       
       &nbsp;&nbsp;<span data-livestamp="2015-05-14T10:00:00-0500"></span>
       

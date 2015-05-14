@@ -60,24 +60,10 @@ Strawberry (a.k.a., cli) is a Sireum distribution that includes :ref:`vanilla`
 and all publicly released Sireum (v2) tools and their Command-Line Interface
 (CLI) such as `Amandroid <http://amandroid.sireum.org>`__.
 
-* *stable* 
-
-  * @ `Bintray <https://bintray.com/sireum/cli/stable/latest/view#files>`__
+* *stable* @ `Bintray <https://bintray.com/sireum/cli/stable/latest/view#files>`__
   
-  * @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-stable/>`__
-    (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/stable/Dockerfile>`__; ``SIREUM_HOME`` = ``/opt/Sireum``)::
-   
-        docker run -i -t sireum/cli-stable:latest /bin/bash
-        
-* *dev (weekly)*
-
-  * @ `Bintray <https://bintray.com/sireum/cli/dev/weekly/view#files>`__
+* *dev (weekly)* @ `Bintray <https://bintray.com/sireum/cli/dev/weekly/view#files>`__
   
-  * @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-dev/>`__
-    (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/dev/Dockerfile>`__; ``SIREUM_HOME`` = ``/opt/Sireum``)::
-   
-        docker run -i -t sireum/cli-dev:weekly /bin/bash
-
 .. _shortcake:
     
 Shortcake
@@ -126,6 +112,30 @@ case by, for example, adding the absolute path of ``SIREUM_HOME`` to the
 
          type *.part_* > sireum-<flavor>-<version>-win64.zip 
  
+
+
+.. _strawberry-docker:
+
+Sireum Strawberry Docker Containers
+-----------------------------------
+
+We also provide `Docker containers <https://registry.hub.docker.com/repos/sireum/>`__
+for :ref:`strawberry` to help ensure reproducibility of working
+Sireum installations:
+
+* *stable* @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-stable/>`__
+  (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/stable/Dockerfile>`__)::
+  
+      docker run -i -t sireum/cli-stable:latest /bin/bash
+        
+* *dev (weekly)*: @ `Docker Hub <https://registry.hub.docker.com/u/sireum/cli-dev/>`__
+  (`Dockerfile <https://github.com/sireum/docker/blob/master/cli/dev/Dockerfile>`__)::
+   
+      docker run -i -t sireum/cli-dev:weekly /bin/bash
+
+For the above containers, ``SIREUM_HOME`` is ``/opt/Sireum``.
+
+
 
 Running Sireum
 ==============
