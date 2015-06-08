@@ -62,7 +62,7 @@ Team
                  <td><img src="_static/robby.png" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <em>Associate Professor</em><br/>
+                   <em>Professor</em><br/>
                    <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>

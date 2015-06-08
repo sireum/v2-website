@@ -22,7 +22,7 @@ Team
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
                    <strong>Robby</strong> <br/>
-                   <em>Associate Professor</em><br/>
+                   <em>Professor</em><br/>
                    <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
