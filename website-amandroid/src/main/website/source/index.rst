@@ -8,7 +8,7 @@
    team
 
 Amandroid
-#################
+#########
 
 .. raw:: html
 
@@ -70,8 +70,6 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 
 .. raw:: html
 
-             <br>
-             <br>
            </div>
          </div>
        </div>
@@ -81,18 +79,15 @@ On top of Amandroid we performed certain specific security analyses, for instanc
              <h3 class="panel-title">Contact</h3>
            </div>
            <div class="panel-body">
-
-| `Argus Laboratory <http://arguslab.org>`__ and `SAnToS Laboratory <http://santoslab.org>`__
-| `Computing and Information Sciences Department <http://www.cis.ksu.edu>`__
-| `Kansas State University <http://www.ksu.edu>`__
-| 234 `Nichols Hall <http://www.k-state.edu/maps/buildings/N/>`__
-| `Manhattan <http://www.ci.manhattan.ks.us/>`__, `KS <http://www.kansas.gov/>`__, 66506
-| Phone: (785) 532-6350
-| Fax: (785) 532-7353
-| Email: amandroid@sireum.org 
-
-.. raw:: html
-
+             <a href="http://arguslab.org">Argus Laboratory</a> and <a href="http://santoslab.org">SAnToS Laboratory</a><br/> 
+             <a href="http://www.cis.ksu.edu">Computing &amp; Information Sciences Department</a><br/>
+             <a href="http://www.ksu.edu">Kansas State University</a><br/>
+             234 <a href="http://www.k-state.edu/maps/buildings/N/">Nichols Hall</a><br/>
+             <a href="http://goo.gl/maps/uWgRY">702 Mid-Campus Drive South</a><br/>
+             <a href="http://www.ci.manhattan.ks.us/">Manhattan</a>, <a href="http://www.kansas.gov/">KS</a> <a href="https://www.google.com/maps/place/Manhattan,+KS+66506">66506</a><br/>
+             Phone: (785) 532-6350<br/>
+             Fax: (785) 532-7353<br/>
+             Email: <a href="mailto:amandroid@sireum.org">amandroid@sireum.org</a>
            </div>
          </div>
        </div>
@@ -116,6 +111,7 @@ this material are those of the authors and do not necessarily reflect
 the views of the previously mentioned institutions.
 
 .. raw:: html
+
            </div>
          </div>
        </div>

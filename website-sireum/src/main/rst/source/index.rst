@@ -98,9 +98,10 @@ the views of the previously mentioned institutions.
            </div>
            <div class="panel-body">
              <a href="http://santoslab.org">SAnToS Laboratory</a><br/> 
-             <a href="http://www.cis.ksu.edu">Computing and Information Sciences Department</a><br/>
+             <a href="http://www.cis.ksu.edu">Computing &amp; Information Sciences Department</a><br/>
              <a href="http://www.ksu.edu">Kansas State University</a><br/>
              234 <a href="http://www.k-state.edu/maps/buildings/N/">Nichols Hall</a><br/>
+             <a href="http://goo.gl/maps/uWgRY">702 Mid-Campus Drive South</a><br/>
              <a href="http://www.ci.manhattan.ks.us/">Manhattan</a>, <a href="http://www.kansas.gov/">KS</a> <a href="https://www.google.com/maps/place/Manhattan,+KS+66506">66506</a><br/>
              Phone: (785) 532-6350<br/>
              Fax: (785) 532-7353<br/>
