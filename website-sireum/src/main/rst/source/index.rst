@@ -78,9 +78,8 @@ award `CCF-0644288 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0644288>`__,
 Rockwell Collins Advanced Technology Center, and
 Lockheed Martin Advanced Technology Laboratories.
 
-Sireum source (private) and binary repositories
-are kindly provided by `GitHub <https://github.com/sireum>`__ and 
-`Bintray <https://bintray.com/sireum>`__, respectively.
+Sireum source (private) repositories
+are kindly provided by `GitHub <https://github.com/sireum>`__.
 
 Any opinions, findings, conclusions, or recommendations expressed in
 this material are those of the authors and do not necessarily reflect

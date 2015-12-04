@@ -44,12 +44,10 @@ installed on an on-demand basis.
   `mac64 <http://files.sireum.org/sireum-stable-mac64.tar.gz>`__, 
   `linux64 <http://files.sireum.org/sireum-stable-linux64.tar.gz>`__, 
   `win64 <http://files.sireum.org/sireum-stable-win64.zip>`__
-  (also available @ `Bintray <https://bintray.com/sireum/vanilla/stable/latest/view#files>`__) 
 * *dev (nightly)*: 
   `mac64 <http://files.sireum.org/sireum-dev-mac64.tar.gz>`__, 
   `linux64 <http://files.sireum.org/sireum-dev-linux64.tar.gz>`__, 
   `win64 <http://files.sireum.org/sireum-dev-win64.zip>`__
-  (*weekly* available @ `Bintray <https://bintray.com/sireum/vanilla/dev/weekly/view#files>`__)
    
 .. _strawberry:
 
@@ -60,10 +58,11 @@ Strawberry (a.k.a., cli) is a Sireum distribution that includes :ref:`vanilla`
 and all publicly released Sireum (v2) tools and their Command-Line Interface
 (CLI) such as `Amandroid <http://amandroid.sireum.org>`__.
 
-* *stable* @ `Bintray <https://bintray.com/sireum/cli/stable/latest/view#files>`__
-  
-* *dev (weekly)* @ `Bintray <https://bintray.com/sireum/cli/dev/weekly/view#files>`__
-  
+To install Strawberry from Vanilla (see :ref:`install` and :ref:`running` below)::
+
+    sireum install "Sireum Amandroid Cli"
+
+
 .. _shortcake:
     
 Shortcake
@@ -73,8 +72,12 @@ Shortcake (a.k.a., ide) is a Sireum distribution that includes :ref:`strawberry`
 and the Sireum Integrated Development Environment
 (IDE, see :ref:`subsec-sireum-ide-feature`).
 
-* *stable* @ `Bintray <https://bintray.com/sireum/ide/stable/latest/view#files>`__
-* *dev (weekly)* @ `Bintray <https://bintray.com/sireum/ide/dev/weekly/view#files>`__
+To install Shortcake from Vanilla (see :ref:`install` and :ref:`running` below)::
+
+    sireum install "Sireum Amandroid Cli"
+    sireum install SireumDev
+    sireum install PlatformDoc
+
 
 .. note::
 
@@ -82,6 +85,8 @@ and the Sireum Integrated Development Environment
    :ref:`sec-releases` page.
    The list of all packages included in the distributions (i.e., Sireum 
    dependencies) can be found at the Sireum :ref:`sec-packages` page.
+
+.. _install:
 
 Installation Instructions
 -------------------------
@@ -100,19 +105,7 @@ case by, for example, adding the absolute path of ``SIREUM_HOME`` to the
    ``SIREUM_HOME`` should not contain whitespaces, and in Windows, it is best
    to put it in a root drive because
    of `Windows' file path limit of 260 characters <http://msdn.microsoft.com/en-us/library/aa365247(VS.85).aspx#maxpath>`_.)
-
-   The :ref:`strawberry` and :ref:`shortcake` distributions consist of
-   compressed file parts.
-
-   * To uncompress in OS X and Linux::
-
-         cat *.part_* | tar xz
-      
-   * To reassemble in Windows::
-
-         type *.part_* > sireum-<flavor>-<version>-win64.zip 
  
-
 
 .. _strawberry-docker:
 
@@ -136,6 +129,7 @@ Sireum installations:
 For the above containers, ``SIREUM_HOME`` is ``/opt/Sireum``.
 
 
+.. _running:
 
 Running Sireum
 ==============
