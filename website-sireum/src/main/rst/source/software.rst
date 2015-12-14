@@ -173,6 +173,11 @@ To update Sireum tools and apps, type the following in a terminal::
     
 .. note::
 
+   If you use Sireum Shortcake, after an update, make sure to launch Sireum
+   Eclipse IDE using the ``-clean`` option as follows::
+   
+       sireum launch sireumdev -j "-Xms512m,-Xmx4096m" --args -clean
+
    To change to a specific version of Sireum, set the ``SIREUM_UPDATE``
    environment variable to point to the corresponding update site version listed
    in the Sireum :ref:`sec-releases` page before running Sireum update.
