@@ -78,9 +78,8 @@ award `CCF-0644288 <http://www.nsf.gov/awardsearch/showAward?AWD_ID=0644288>`__,
 Rockwell Collins Advanced Technology Center, and
 Lockheed Martin Advanced Technology Laboratories.
 
-Sireum source (private) and binary repositories
-are kindly provided by `GitHub <https://github.com/sireum>`__ and 
-`Bintray <https://bintray.com/sireum>`__, respectively.
+Sireum source (private) repositories
+are kindly provided by `GitHub <https://github.com/sireum>`__.
 
 Any opinions, findings, conclusions, or recommendations expressed in
 this material are those of the authors and do not necessarily reflect
@@ -98,9 +97,10 @@ the views of the previously mentioned institutions.
            </div>
            <div class="panel-body">
              <a href="http://santoslab.org">SAnToS Laboratory</a><br/> 
-             <a href="http://www.cis.ksu.edu">Computing and Information Sciences Department</a><br/>
+             <a href="http://www.cis.ksu.edu">Computing &amp; Information Sciences Department</a><br/>
              <a href="http://www.ksu.edu">Kansas State University</a><br/>
              234 <a href="http://www.k-state.edu/maps/buildings/N/">Nichols Hall</a><br/>
+             <a href="http://goo.gl/maps/uWgRY">702 Mid-Campus Drive South</a><br/>
              <a href="http://www.ci.manhattan.ks.us/">Manhattan</a>, <a href="http://www.kansas.gov/">KS</a> <a href="https://www.google.com/maps/place/Manhattan,+KS+66506">66506</a><br/>
              Phone: (785) 532-6350<br/>
              Fax: (785) 532-7353<br/>

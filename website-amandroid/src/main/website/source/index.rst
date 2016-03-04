@@ -8,7 +8,7 @@
    team
 
 Amandroid
-#################
+#########
 
 .. raw:: html
 
@@ -70,8 +70,6 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 
 .. raw:: html
 
-             <br>
-             <br>
            </div>
          </div>
        </div>
@@ -91,10 +89,10 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 | `SAnToS Laboratory <http://santoslab.org>`__
 | `Computing and Information Sciences Department <http://www.cis.ksu.edu>`__
 | `Kansas State University <http://www.ksu.edu>`__
-| 234 Nichols Hall
-| Manhattan , KS, 66506
+| `702 Mid-Campus Drive South <http://goo.gl/maps/uWgRY>`__
+| `Manhattan <http://www.ci.manhattan.ks.us/>`__ , `KS <http://www.kansas.gov/>`__, `66506 <https://www.google.com/maps/place/Manhattan,+KS+66506>`__
 |
-| Email: amandroid@sireum.org 
+| Email: `amandroid@sireum.org <mailto:amandroid@sireum.org>`__
 
 .. raw:: html
 
@@ -121,6 +119,7 @@ this material are those of the authors and do not necessarily reflect
 the views of the previously mentioned institutions.
 
 .. raw:: html
+
            </div>
          </div>
        </div>
