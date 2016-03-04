@@ -82,13 +82,18 @@ On top of Amandroid we performed certain specific security analyses, for instanc
            </div>
            <div class="panel-body">
 
-| `Argus Laboratory <http://arguslab.org>`__ and `SAnToS Laboratory <http://santoslab.org>`__
+| `Argus Laboratory <http://arguslab.org>`__
+| `Computer Science and Engineering Department <http://www.usf.edu/engineering/cse/>`__
+| `University of South Florida <http://www.usf.edu/>`__
+| 4202 E. Fowler Avenue, ENB 118
+| Tampa, FL, 33620
+|
+| `SAnToS Laboratory <http://santoslab.org>`__
 | `Computing and Information Sciences Department <http://www.cis.ksu.edu>`__
 | `Kansas State University <http://www.ksu.edu>`__
-| 234 `Nichols Hall <http://www.k-state.edu/maps/buildings/N/>`__
-| `Manhattan <http://www.ci.manhattan.ks.us/>`__, `KS <http://www.kansas.gov/>`__, 66506
-| Phone: (785) 532-6350
-| Fax: (785) 532-7353
+| 234 Nichols Hall
+| Manhattan , KS, 66506
+|
 | Email: amandroid@sireum.org 
 
 .. raw:: html

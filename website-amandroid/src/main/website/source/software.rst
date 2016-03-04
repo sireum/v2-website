@@ -20,8 +20,6 @@ Links
 Getting Started
 ******************
 
-.. warning:: Amandroid currently is not available for Windows.
-
 
 This section will help you to start with using Amandroid.
 
@@ -43,13 +41,16 @@ Follow instructions in `Tutorial <http://amandroid.sireum.org/docs/tutorial.html
 Start with Executable
 ======================
 
-Amandroid is a feature in `Sireum <http://www.sireum.org/>`__ Command Line Interface (CLI), following instruction will help you to setup.
+Amandroid is a feature in `Sireum <http://www.sireum.org/>`__ (a static analysis framework) Command Line Interface (CLI); the instructions below will help you setup.
 
 Download Sireum
 --------------------
 
 	Follow instructions in `Sireum Strawberry <http://sireum.org/software.html#strawberry>`__ to download and setup Sireum-cli.
 
+.. sidebar:: Tips
+
+	You can modify the configuration for Amandroid by editing ``/path/Sireum/apps/amandroid/config.ini``. 
 
 Run Amandroid
 -------------------
@@ -70,8 +71,21 @@ Run Amandroid
 
 	.. code-block:: bash
 
-		$ sireum amandroid taintAnalysis -m 12 -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+		$ sireum amandroid taintAnalysis -m 8 -o /outputPath /path/some.apk
 
 
------------------
+Test Amandroid
+--------------------
 
+	To make sure Amandroid running on your environment, you can execute it on our test apks, which you can find in the ``/path/Sireum/apps/amandroid/sources/icc-bench`` folder or `ICC-Bench <https://github.com/fgwei/ICC-Bench/tree/master/apks>`__.
+
+	The command to run is:
+
+	.. code-block:: bash
+
+		$ sireum amandroid taintAnalysis -m 4 -o /outputPath /path/Sireum/apps/amandroid/sources/icc-bench
+
+	More test apks you can find from `DroidBench <https://github.com/secure-software-engineering/DroidBench/tree/master/apk>`__.
+
+
+------------------------

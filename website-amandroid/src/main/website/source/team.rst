@@ -20,9 +20,9 @@ Team
                  <td valign="top">
                    <em>Associate Professor</em><br/>
                    <a href="http://arguslab.org">Argus Laboratory</a><br/>
-                   <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
-                   <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
-                   <a href="http://people.cis.ksu.edu/~xou">Website</a>
+                   <a href="http://www.usf.edu/engineering/cse/">CSE Department</a><br/>
+                   <a href="http://www.usf.edu">University of South Florida</a><br/><br/>
+                   <a href="http://www.cse.usf.edu/~xou/">Website</a>
                  </td>
                </tr>
              </table>             
@@ -40,7 +40,7 @@ Team
                  <td><img src="_static/venkatesh.png" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <em>Visiting Assistant Professor</em><br/>
+                   <em>Assistant Professor</em><br/>
                    <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
@@ -62,7 +62,7 @@ Team
                  <td><img src="_static/robby.png" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <em>Associate Professor</em><br/>
+                   <em>Professor</em><br/>
                    <a href="http://santoslab.org">SAnToS Laboratory</a><br/>
                    <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
                    <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
@@ -86,10 +86,9 @@ Team
                  <td><img src="_static/sankar.jpg" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <em>Research Associate</em><br/>
-                   <a href="http://arguslab.org">Argus</a>/<a href="http://santoslab.org">SAnToS</a> Laboratory<br/>
-                   <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
-                   <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
+                   <em>Assistant Professor</em><br/>
+                   <a href="https://www.bgsu.edu/arts-and-sciences/computer-science.html">CS Department</a><br/>
+                   <a href="https://www.bgsu.edu">Bowling Green State University</a><br/><br/>
                    <a href="http://people.cis.ksu.edu/~sroy">Website</a>
                  </td>
                </tr>
@@ -108,11 +107,11 @@ Team
                  <td><img src="_static/fgwei.jpg" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <em>Ph.D. Candidate</em><br/>
+                   <em>Ph.D. Student</em><br/>
                    <a href="http://arguslab.org">Argus</a>/<a href="http://santoslab.org">SAnToS</a> Laboratory<br/>
-                   <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
-                   <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
-                   <a href="http://people.cis.ksu.edu/~fgwei">Website</a>
+                   <a href="http://www.usf.edu/engineering/cse/">CSE Department</a><br/>
+                   <a href="http://www.usf.edu">University of South Florida</a><br/><br/>
+                   <a href="http://www.arguslab.org/~fgwei">Website</a>
                  </td>
                </tr>
              </table>             
@@ -130,10 +129,10 @@ Team
                  <td><img src="_static/ypli.jpg" height="140px"/></td>
                  <td>&nbsp;&nbsp;&nbsp;</td>
                  <td valign="top">
-                   <em>Ph.D. Candidate</em><br/>
+                   <em>Ph.D. Student</em><br/>
                    <a href="http://arguslab.org">Argus Laboratory</a><br/>
-                   <a href="http://www.cis.ksu.edu">CIS Department</a><br/>
-                   <a href="http://www.ksu.edu">Kansas State University</a><br/><br/>
+                   <a href="http://www.usf.edu/engineering/cse/">CSE Department</a><br/>
+                   <a href="http://www.usf.edu">University of South Florida</a><br/><br/>
                    <a href="http://people.cis.ksu.edu/~ypli">Website</a>
                  </td>
                </tr>
