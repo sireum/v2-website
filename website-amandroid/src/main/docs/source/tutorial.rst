@@ -13,19 +13,18 @@ Setup Sireum CLI
 
 	To get more detailed information about how Sireum CLI works, please follow instructions at http://www.sireum.org/software.html.
 
-.. warning:: Amandroid currently is not available for Windows.
 
 Sireum CLI setup is pretty strait-forward, following steps need to be followed: 
 
-1. Follow instructions in `Sireum Shortcake <http://sireum.org/software.html#shortcake>`__ to download and setup Sireum-ide.
+1. Follow instructions in `Sireum Shortcake <http://sireum.org/software.html#shortcake>`__ to download and setup Sireum-ide, make sure you are using the ``dev(nightly)`` version.
 
 2. Launch Eclipse:
 
-.. code-block:: bash
+	.. code-block:: bash
 
-	$ sireum launch sireumdev -j "-Xms256m,-Xmx2048m" --args -clean
+		$ sireum launch sireumdev -j "-Xms256m,-Xmx2048m"
 
-This will launch Eclipse IDE with all required pulgins. ``-j "-Xms512m,-Xmx4096m" --args -clean`` is parameter gives to Eclipse (you can modify it based on your machines performance).
+	This will launch Eclipse IDE with all required pulgins. ``-j "-Xms512m,-Xmx4096m"`` is parameter gives to Eclipse (you can modify it based on your machines performance).
 
 
 After above steps you will get a working development platform with all the necessary plugins setup. Then it is time to get code of Amandroid.
@@ -65,25 +64,15 @@ Clone all the required repositories into your workspace using Eclipse:
 
 3. Wait for the repository to be cloned—this may take a couple of minutes.
 
-4. Import all the projects by:
+4. Import all the projects ``in order (from Sireum Prelude to Sireum Amandroid)`` by:
 
-right-click on each repository -> select ``Import Projects …`` -> check ``Import existing projects`` and go ``Next`` -> Click ``Finish`` with all projects checked.
+	right-click on each repository -> select ``Import Projects …`` -> check ``Import existing projects`` and go ``Next`` -> Click ``Finish`` with all projects checked.
 
 5. Wait for the projects to be imported, and the indexing to finish.
 
 TroubleShooting
 ===============
 
-1. Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.
+1. The order of importing those repositories is really important.
 
-2. If you get issue related to dex2pilar, please try following:
-
-	a. ``sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386``
-
-	b. ``cd /usr/lib32``
-
-	c. ``sudo ln -sf libstdc++.so.6 libc++.so``
-
-	d. ``export LD_LIBRARY_PATH=/usr/lib32``
-
-	e. Try again. If the problem remains check `Issue 17 <https://github.com/sireum/amandroid/issues/17>`__. Or report to us.
+2. Sometimes, after you import all the projects it will show error mark on some of the projects. Just clean all projects.
