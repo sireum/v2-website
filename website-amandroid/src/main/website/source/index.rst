@@ -100,7 +100,7 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 | `Computing and Information Sciences Department <http://www.cis.ksu.edu>`__
 | `Kansas State University <http://www.ksu.edu>`__
 | `702 Mid-Campus Drive South <http://goo.gl/maps/uWgRY>`__
-| `Manhattan <http://www.ci.manhattan.ks.us/>`__, `KS <http://www.kansas.gov/>`__, `66506 <https://www.google.com/maps/place/Manhattan,+KS+66506>`__
+| `Manhattan <http://www.ci.manhattan.ks.us/>`__ , `KS <http://www.kansas.gov/>`__, `66506 <https://www.google.com/maps/place/Manhattan,+KS+66506>`__
 |
 | Email: `amandroid@sireum.org <mailto:amandroid@sireum.org>`__
 
