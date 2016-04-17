@@ -13,10 +13,20 @@ Amandroid
 .. raw:: html
 
    <div class="container-fluid">
-     <div class="row">
-       <div class="col-md-12">
-         <img src="_static/amandroid.png" />
-       </div>
+     <div class="jumbotron">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h1>Amandroid</h1>
+                <p>Amandroid is a static analysis framework for Android apps.</p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="documentation.html" role="button">Amandroid Documentation &raquo;</a>
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <img src="_static/argus.png" alt="..." class="img-rounded img-responsive">
+                <img src="_static/santos.png" alt="..." class="img-rounded img-responsive">
+            </div>
+        </div>
      </div>
      
      <br/>
@@ -83,7 +93,7 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 | `Argus Laboratory <http://arguslab.org>`__
 | `Computer Science and Engineering Department <http://www.usf.edu/engineering/cse/>`__
 | `University of South Florida <http://www.usf.edu/>`__
-| 4202 E. Fowler Avenue, ENB 118
+| 4202 E. Fowler Avenue, ENB2 226
 | Tampa, FL, 33620
 |
 | `SAnToS Laboratory <http://santoslab.org>`__
